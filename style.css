@@ -1008,7 +1008,7 @@ img { max-width: 100%; display: block; }
 }
 .use-case-card:hover { border-color: var(--border-medium); transform: translateY(-2px); }
 .use-case-icon {
-  width: 44px; height: 44px;
+  width: 52px; height: 52px;
   background: rgba(77,107,254,0.1);
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
