@@ -443,8 +443,12 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.feature-strip-2col {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 960px;
+}
 .feature-strip-item {
-  padding: 20px 20px;
+  padding: 28px 32px;
   border-right: 1px solid rgba(77,107,254,0.1);
   transition: var(--transition);
   position: relative;
