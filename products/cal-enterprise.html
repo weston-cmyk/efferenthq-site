@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cal Enterprise — EfferentHQ</title>
+  <meta name="description" content="Cal Enterprise is the full stack: Discovery + Reflex + ROI Engine + Cal Intelligence, deployed to your infrastructure. Governed, sovereign, and built for organizations that can't afford to get it wrong.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .stack-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+    .stack-card { background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:32px; transition:var(--transition); text-decoration:none; display:block; }
+    .stack-card:hover { border-color:var(--border-medium); transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+    .stack-card h3 { font-size:20px; font-weight:700; color:var(--white); margin-bottom:10px; }
+    .stack-card p { font-size:14px; color:var(--text-secondary); line-height:1.65; }
+    .stack-icon { width:48px; height:48px; border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; }
+    .deployment-list { list-style:none; display:flex; flex-direction:column; gap:16px; }
+    .deployment-list li { display:flex; gap:16px; align-items:flex-start; font-size:15px; color:var(--text-secondary); }
+    .deployment-list li::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; margin-top:1px; }
+    @media (max-width:768px) { .stack-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown"><a href="index.html" class="active">Products<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers</span></a>
+            <a href="cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment</span></a>
+            <a href="specialists.html" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons</span></a>
+            <a href="cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your entire data estate</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signal detection</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../pricing.html">Pricing</a></li><li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding-bottom:120px;">
+  <canvas id="ent-canvas"></canvas>
+  <div class="container page-hero-content">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.25);border-radius:100px;padding:6px 16px;margin-bottom:28px;">
+      <span style="font-size:11px;font-weight:700;color:var(--green);letter-spacing:1.5px;text-transform:uppercase;">Cal Lattice — Full Platform</span>
+    </div>
+    <h1 class="headline-xl" style="margin-bottom:20px;">The Full Stack.<br><span class="text-green">Nothing Left Out.</span></h1>
+    <p class="body-lg" style="max-width:700px;margin-bottom:40px;">Cal Enterprise is Discovery + Reflex + ROI Engine + Cal Intelligence, deployed to your infrastructure. Governed access controls, SLA guarantees, dedicated support, and zero data egress — for organizations that can't afford to get it wrong.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="../index.html#contact" class="btn btn-green btn-lg">Schedule Enterprise Demo →</a>
+      <a href="index.html" class="btn btn-outline btn-lg">Explore All Products</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);padding:64px 0;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px;">
+      <p class="eyebrow">What's Included</p>
+      <h2 class="headline-lg">Four Engines. <span class="text-green">One Deployment.</span></h2>
+    </div>
+    <div class="stack-grid">
+      <a href="discovery.html" class="stack-card">
+        <div class="stack-icon" style="background:rgba(77,107,254,0.1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+        <h3>Discovery</h3>
+        <p>Autonomously maps your entire data estate — every table, every relationship — into a single navigable knowledge structure. No configuration. No manual work.</p>
+      </a>
+      <a href="reflex.html" class="stack-card">
+        <div class="stack-icon" style="background:rgba(52,211,153,0.1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Reflex</h3>
+        <p>Monitors your data continuously and fires confidence-scored alerts when something important changes. Routes to Slack, CRM, email, or any channel your team uses.</p>
+      </a>
+      <a href="roi-engine.html" class="stack-card">
+        <div class="stack-icon" style="background:rgba(245,158,11,0.1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>ROI Engine</h3>
+        <p>Tracks every alert to its outcome. Decision made, business impact measured, platform ROI attributed. Your board gets a number, not a story.</p>
+      </a>
+      <div class="stack-card" style="border-color:rgba(77,107,254,0.25);">
+        <div class="stack-icon" style="background:rgba(77,107,254,0.1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3>Cal Intelligence</h3>
+        <p>Your team can ask questions in plain language and get verified, confidence-scored answers drawn from both your internal data estate and Cal's global knowledge mesh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+      <div>
+        <p class="eyebrow">Enterprise Guarantees</p>
+        <h2 class="headline-lg" style="margin-bottom:28px;">What Every Deployment <span class="text-blue">Includes</span></h2>
+        <ul class="deployment-list">
+          <li>Zero data egress — your data never leaves your environment</li>
+          <li>Deployed to your infrastructure (cloud, on-prem, or hybrid)</li>
+          <li>Governed access controls with role-based permissions</li>
+          <li>SLA guarantees with defined uptime and response commitments</li>
+          <li>Dedicated customer success and engineering support</li>
+          <li>White-glove onboarding and implementation support</li>
+          <li>Regular platform updates pushed to your deployment</li>
+          <li>Executive-ready ROI reporting built in</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow" style="color:var(--gold);">Pricing</p>
+        <h2 class="headline-lg" style="margin-bottom:20px;">Custom to Your<br>Data Estate</h2>
+        <p class="body-lg" style="margin-bottom:24px;">Cal Enterprise is priced based on data environment size, engines deployed, and deployment model. We don't have a price list because no two organizations are the same.</p>
+        <p class="body-md" style="margin-bottom:32px;">Schedule a demo. We'll scope your environment and return a tailored proposal within 48 hours — with a projected ROI attached.</p>
+        <a href="../index.html#contact" class="btn btn-green btn-lg">Schedule Enterprise Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-banner">
+      <p class="eyebrow">Enterprise Ready</p>
+      <h2 class="headline-lg">Built for Organizations That Can't Afford to Get It Wrong</h2>
+      <p class="body-lg">Schedule a 30-minute demo. We'll connect to a sample of your data environment and show you Discovery, Reflex, and Cal Intelligence working together — live.</p>
+      <div class="cta-banner-actions">
+        <a href="../index.html#contact" class="btn btn-green btn-lg">Schedule Enterprise Demo →</a>
+        <a href="../pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="../index.html" class="nav-logo" style="font-size:20px;"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+      <div style="display:flex;gap:12px;"><a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a><a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a></div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="reflex.html">Reflex</a></li><li><a href="roi-engine.html">ROI Engine</a></li><li><a href="cal-enterprise.html">Cal Enterprise</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Blog</a></li><li><a href="../resources.html">Platform Brief</a></li><li><a href="../resources.html">Technical Docs</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p></div>
+  </div>
+</footer>
+<script src="../particles.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { initParticles('ent-canvas', { count: 70, speed: 0.18, connectionDist: 120, maxOpacity: 0.4 }); });</script>
+</body>
+</html>

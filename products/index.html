@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — EfferentHQ</title>
+  <meta name="description" content="Cal Consumer, Cal Lattice, Discovery, Reflex, ROI Engine, Cal Enterprise, Cal API. Every product in the EfferentHQ sovereign intelligence platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product-tile {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: var(--transition);
+      text-decoration: none;
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+    }
+    .product-tile::after {
+      content: '→';
+      position: absolute;
+      bottom: 28px; right: 28px;
+      font-size: 18px; color: var(--blue);
+      opacity: 0; transition: opacity 0.2s, right 0.2s;
+    }
+    .product-tile:hover { border-color: var(--border-medium); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .product-tile:hover::after { opacity: 1; right: 24px; }
+    .product-tile:hover h3 { color: var(--white); }
+    .product-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 10px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; padding: 4px 10px;
+      border-radius: 4px; margin-bottom: 20px; width: fit-content;
+    }
+    .product-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; flex-shrink: 0;
+    }
+    .product-tile h3 { font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; transition: color 0.2s; }
+    .product-tile p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; flex: 1; }
+    .suite-header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border-subtle); }
+    .suite-header h2 { margin-bottom: 8px; }
+    @media (max-width: 900px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .products-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>
+      Efferent<span class="hq">HQ</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html" class="active">Products
+          <svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers for researchers &amp; professionals</span></a>
+            <a href="cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment for privacy-critical teams</span></a>
+            <a href="specialists.html" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons: Medicine, Law, Finance, Climate</span></a>
+            <a href="cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform — embed Cal in your product</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your entire data estate automatically</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signal detection and governed alerts</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution and outcome tracking</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + Cal Intelligence</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <canvas id="products-canvas"></canvas>
+  <div class="container page-hero-content">
+    <p class="eyebrow">Products</p>
+    <h1 class="headline-xl" style="margin-bottom:16px;">One Intelligence Platform. <span class="text-blue">Every Layer Covered.</span></h1>
+    <p class="body-lg" style="max-width:680px;">From individual researchers to enterprise data estates — Cal's product suite spans every use case, every deployment model, every level of sovereignty.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- CAL CONSUMER SUITE -->
+    <div class="suite-header">
+      <p class="eyebrow">Cal — Sovereign Intelligence</p>
+      <h2 class="headline-lg">For Individuals &amp; Teams</h2>
+      <p class="body-md" style="max-width:600px;">Confidence-scored answers with full evidence trails. Runs entirely on EfferentHQ infrastructure — no external API calls, no data leaving your environment.</p>
+    </div>
+
+    <div class="products-grid" style="margin-bottom:80px;">
+
+      <a href="cal-consumer.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(77,107,254,0.1);color:var(--blue-light);">Cal Consumer</div>
+        <div class="product-icon" style="background:rgba(77,107,254,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <h3>Cal Consumer</h3>
+        <p>Verified intelligence for researchers, analysts, and professionals. Every answer confidence-scored. Every source traceable. Four tiers from Free to Sovereign.</p>
+      </a>
+
+      <a href="cal-sovereign.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(245,158,11,0.1);color:var(--gold);">Air-Gapped</div>
+        <div class="product-icon" style="background:rgba(245,158,11,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>Cal Sovereign</h3>
+        <p>Maximum intelligence with maximum privacy. Air-gapped deployment for regulated industries, government, and privacy-critical organizations. Zero data egress — guaranteed.</p>
+      </a>
+
+      <a href="specialists.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(52,211,153,0.1);color:var(--green);">Add-Ons</div>
+        <div class="product-icon" style="background:rgba(52,211,153,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <h3>Specialists</h3>
+        <p>Deep domain knowledge add-ons for Medicine, Law, Finance, and Climate. Expert-tier intelligence for fields where getting it wrong has real consequences.</p>
+      </a>
+
+      <a href="cal-api.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(168,85,247,0.1);color:#A855F7;">Developer</div>
+        <div class="product-icon" style="background:rgba(168,85,247,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        </div>
+        <h3>Cal API</h3>
+        <p>Embed Cal's verified intelligence into your own product. REST API with confidence scores, evidence trails, and full sovereignty guarantees. SDKs for every major language.</p>
+      </a>
+
+    </div>
+
+    <!-- CAL LATTICE SUITE -->
+    <div class="suite-header">
+      <p class="eyebrow" style="color:var(--green);">Cal Lattice Platform</p>
+      <h2 class="headline-lg">For Enterprise Data Estates</h2>
+      <p class="body-md" style="max-width:680px;">Three purpose-built engines that map, monitor, and attribute intelligence across your entire data environment. Each works standalone. Together, they're the intelligence layer your organization has been missing.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <a href="discovery.html" class="product-tile" style="border-color:rgba(77,107,254,0.2);">
+        <div class="product-badge" style="background:rgba(77,107,254,0.15);color:var(--blue-light);">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Novel Technology
+        </div>
+        <div class="product-icon" style="background:rgba(77,107,254,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+        <h3>Discovery</h3>
+        <p>Maps your entire data estate autonomously — every table, every relationship, every schema — into a single navigable knowledge structure. No configuration. No manual mapping. Nothing like it exists.</p>
+      </a>
+
+      <a href="reflex.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(52,211,153,0.1);color:var(--green);">Real-Time</div>
+        <div class="product-icon" style="background:rgba(52,211,153,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Reflex</h3>
+        <p>Watches your data continuously and fires confidence-scored alerts the moment something important changes. Governed routing to Slack, CRM, email, or any channel your team already uses.</p>
+      </a>
+
+      <a href="roi-engine.html" class="product-tile">
+        <div class="product-badge" style="background:rgba(245,158,11,0.1);color:var(--gold);">Attribution</div>
+        <div class="product-icon" style="background:rgba(245,158,11,0.1);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h3>ROI Engine</h3>
+        <p>Closes the intelligence loop. Tracks what happens after every alert — was it acted on, what was the outcome, what was the business impact? Every decision attributed. Every result measured.</p>
+      </a>
+
+      <a href="cal-enterprise.html" class="product-tile" style="border-color:rgba(52,211,153,0.2);grid-column:span 3;">
+        <div style="display:flex;gap:40px;align-items:center;flex-wrap:wrap;">
+          <div style="flex:1;min-width:260px;">
+            <div class="product-badge" style="background:rgba(52,211,153,0.1);color:var(--green);">Full Platform</div>
+            <h3 style="font-size:24px;margin-bottom:12px;">Cal Enterprise</h3>
+            <p>Discovery + Reflex + ROI Engine + Cal Intelligence, deployed to your infrastructure. The complete stack. Governed access, SLA guarantees, dedicated support, and zero data egress. Custom pricing built around your organization.</p>
+          </div>
+          <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
+            <a href="cal-enterprise.html" class="btn btn-green" onclick="event.stopPropagation()">Learn More →</a>
+            <a href="../index.html#contact" class="btn btn-outline" onclick="event.stopPropagation()">Schedule Demo</a>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- How they fit together -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;">
+      <p class="eyebrow">The Full Picture</p>
+      <h2 class="headline-lg">How the Platform Fits <span class="text-blue">Together</span></h2>
+    </div>
+    <div class="differentiators-grid">
+      <div class="diff-item">
+        <p class="diff-number">STEP 01</p>
+        <h3>Discovery Maps Your World</h3>
+        <p>The Discovery engine ingests your entire data estate — databases, warehouses, data lakes — and autonomously builds a structured knowledge map. Every table understood, every relationship typed, every schema rationalized. No human configuration required.</p>
+      </div>
+      <div class="diff-item">
+        <p class="diff-number">STEP 02</p>
+        <h3>Reflex Watches It in Real Time</h3>
+        <p>With the knowledge map in place, Reflex monitors your data continuously. When something important changes — a metric spikes, a pattern emerges, an anomaly appears — Reflex fires a confidence-scored alert to wherever your team works.</p>
+      </div>
+      <div class="diff-item">
+        <p class="diff-number">STEP 03</p>
+        <h3>ROI Engine Measures What Happens</h3>
+        <p>Every alert Reflex fires is tracked through to its outcome. Was it acted on? What decision was made? What was the business impact? The ROI Engine closes the loop — giving you full accountability over your intelligence investment.</p>
+      </div>
+      <div class="diff-item">
+        <p class="diff-number">STEP 04</p>
+        <h3>Cal Intelligence Answers Your Questions</h3>
+        <p>Across all of it, Cal's sovereign intelligence layer lets your team ask questions in plain language and get verified, confidence-scored answers drawn from your own data estate plus Cal's global knowledge mesh. One brain. Everything you know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <p class="eyebrow">Ready to Start?</p>
+      <h2 class="headline-lg">Try Cal Free or Schedule a Demo</h2>
+      <p class="body-lg">Individual access starts at $0. Enterprise deployments are scoped and priced to your data estate.</p>
+      <div class="cta-banner-actions">
+        <a href="../pricing.html" class="btn btn-primary btn-lg">Try Cal Free →</a>
+        <a href="../index.html#contact" class="btn btn-outline btn-lg">Schedule Enterprise Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="../index.html" class="nav-logo" style="font-size:20px;">
+        <svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>
+        Efferent<span class="hq">HQ</span>
+      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a>
+        <a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul>
+        <li><a href="cal-consumer.html">Cal Consumer</a></li>
+        <li><a href="cal-sovereign.html">Cal Sovereign</a></li>
+        <li><a href="discovery.html">Discovery</a></li>
+        <li><a href="reflex.html">Reflex</a></li>
+        <li><a href="roi-engine.html">ROI Engine</a></li>
+        <li><a href="cal-enterprise.html">Cal Enterprise</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul>
+        <li><a href="../resources.html">Blog</a></li>
+        <li><a href="../resources.html">Platform Brief</a></li>
+        <li><a href="../resources.html">Technical Docs</a></li>
+        <li><a href="../resources.html">API Documentation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="#">Press</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EfferentHQ Inc. All rights reserved.</p>
+      <p>Sovereign Intelligence. Computable Confidence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../particles.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initParticles('products-canvas', { count: 60, speed: 0.15, connectionDist: 110, maxOpacity: 0.35 });
+  });
+</script>
+</body>
+</html>

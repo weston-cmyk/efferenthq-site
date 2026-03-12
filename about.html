@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — EfferentHQ</title>
+  <meta name="description" content="We built Cal because AI has a trust problem. Learn about EfferentHQ's mission, team, and the technology behind sovereign intelligence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+        <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+      </svg>
+      Efferent<span class="hq">HQ</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Products
+          <svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="pricing.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers for researchers &amp; professionals</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment for privacy-critical teams</span></a>
+            <a href="#" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons: Medicine, Law, Finance, Climate</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal API</strong><span>Developer platform — embed Cal in your product</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="#" class="dropdown-item"><strong>Discovery</strong><span>See your entire data estate as a single navigable map</span></a>
+            <a href="#" class="dropdown-item"><strong>Reflex</strong><span>Real-time business intelligence and signal detection</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + Cal Intelligence</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── ABOUT HERO ── -->
+<section class="page-hero">
+  <canvas id="about-canvas"></canvas>
+  <div class="container page-hero-content">
+    <p class="eyebrow">About EfferentHQ</p>
+    <h1 class="headline-xl" style="max-width:800px;">We Built Cal Because AI <span class="text-blue">Has a Trust Problem.</span></h1>
+
+    <div class="mission-grid">
+      <div class="mission-block">
+        <p class="eyebrow" style="color:var(--text-muted);">Our Mission</p>
+        <p>Every major AI platform predicts the next word and hopes it's true. They can't tell you how confident they are or show you where an answer came from. The entire industry has converged on the same broken model: generate fluently, hallucinate quietly, and apologize when caught.</p>
+      </div>
+      <div class="mission-block">
+        <p style="margin-top:36px;">Cal is fundamentally different — it knows what it knows, shows its reasoning, and tells you honestly when it doesn't have the answer. We believe AI should earn trust, not demand it. That principle is encoded into every layer of Cal's architecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TWO PLATFORMS ── -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <p class="eyebrow">What Cal Does</p>
+    <h2 class="headline-lg" style="margin-bottom:40px;">Two Platforms. <span class="text-blue">One Intelligence.</span></h2>
+
+    <div class="product-cards">
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+          <div style="width:44px;height:44px;background:rgba(77,107,254,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="headline-sm">Cal — Sovereign Intelligence</h3>
+        </div>
+        <p class="body-md" style="margin-bottom:24px;">Confidence-scored answers with full evidence trails and transparent reasoning. Runs entirely on EfferentHQ infrastructure. No external API calls, no third-party data sharing, no black boxes.</p>
+        <a href="pricing.html" class="btn btn-primary">Try Cal Free →</a>
+      </div>
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+          <div style="width:44px;height:44px;background:rgba(52,211,153,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </div>
+          <h3 class="headline-sm">Cal Lattice Platform</h3>
+        </div>
+        <p class="body-md" style="margin-bottom:8px;">Maps your internal data estate and connects it to Cal's verified intelligence through three engines:</p>
+        <p class="body-sm" style="margin-bottom:24px;">Discovery maps everything. Reflex monitors in real time. ROI Engine tracks every outcome. Each engine works standalone. Together, they become the intelligence layer your organization has been missing.</p>
+        <a href="index.html#contact" class="btn btn-green">Schedule Enterprise Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── USE CASES ── -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Use Cases</p>
+    <h2 class="headline-lg" style="margin-bottom:40px;">Cal in the <span class="text-blue">Real World</span></h2>
+
+    <div class="use-case-grid">
+      <div class="use-case-card">
+        <div class="use-case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+        <h4>The Researcher</h4>
+        <p>Verify claims across sources. Cal gives you the answer, the confidence score, and the full evidence trail — citeable and reproducible.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="use-case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+        </div>
+        <h4>The Analyst</h4>
+        <p>Defend your work in the room. Cal provides reasoning chains for every conclusion — so you can walk any stakeholder through exactly how you got there.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="use-case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h4>The CTO</h4>
+        <p>An intelligence layer that doesn't hallucinate or leak data. Every alert confidence-scored. Cal Lattice maps your entire data estate without moving a byte outside your walls.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="use-case-icon" style="background:rgba(52,211,153,0.1);color:var(--green);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h4>The Revenue Leader</h4>
+        <p>Reflex watches your data and surfaces what matters — deals accelerating, metrics spiking, patterns forming. Confidence-scored, routed to any channel.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="use-case-icon" style="background:rgba(245,158,11,0.1);color:var(--gold);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h4>The Compliance Officer</h4>
+        <p>Every answer traceable, every reasoning step reproducible. Zero data egress. Built for regulated industries where auditability isn't optional.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="use-case-icon" style="background:rgba(168,85,247,0.1);color:#A855F7;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <h4>The Academic</h4>
+        <p>An AI that's honest about uncertainty. Cal tells you how confident it is and why — with the same epistemic standards your field demands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VALUES ── -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <p class="eyebrow">What We Believe</p>
+    <h2 class="headline-lg" style="margin-bottom:48px;">Principles That Drive <span class="text-blue">Every Decision</span></h2>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <p class="value-num">01</p>
+        <h4>Honesty Over Fluency</h4>
+        <p>A well-written wrong answer is worse than an honest "I don't know." Cal is built to tell you when it isn't sure — not to fill silence with plausible-sounding noise.</p>
+      </div>
+      <div class="value-card">
+        <p class="value-num">02</p>
+        <h4>Sovereignty Is Non-Negotiable</h4>
+        <p>Your data belongs to you. Cal processes everything locally. No data egress, no third-party training on your inputs, no exceptions — not even in the fine print.</p>
+      </div>
+      <div class="value-card">
+        <p class="value-num">03</p>
+        <h4>Auditability by Default</h4>
+        <p>Every answer should be reproducible. Every reasoning chain should be inspectable. If you can't show your work, you haven't earned trust — you've just deferred the reckoning.</p>
+      </div>
+      <div class="value-card">
+        <p class="value-num">04</p>
+        <h4>Intelligence That Improves</h4>
+        <p>Cal learns continuously through verified, autonomous subsystems. Not by ingesting your data — by improving its own reasoning strategies, day after day.</p>
+      </div>
+      <div class="value-card">
+        <p class="value-num">05</p>
+        <h4>Enterprise-Grade or Nothing</h4>
+        <p>Governed access, SLA guarantees, dedicated support, zero shortcuts. The organizations that trust Cal with their most sensitive decisions deserve a product that earns it.</p>
+      </div>
+      <div class="value-card">
+        <p class="value-num">06</p>
+        <h4>Build for the Long Run</h4>
+        <p>We're building the intelligence layer that enterprises will run for a decade. That means no hype cycles, no vaporware features — just a system that works and gets better.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <p class="eyebrow">Ready to Start?</p>
+      <h2 class="headline-lg">See Cal in Action</h2>
+      <p class="body-lg">Try Cal Consumer free, or schedule a demo to see Cal Lattice map your data estate in real time.</p>
+      <div class="cta-banner-actions">
+        <a href="pricing.html" class="btn btn-primary btn-lg">Try Cal Free →</a>
+        <a href="index.html#contact" class="btn btn-outline btn-lg">Schedule Enterprise Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="nav-logo" style="font-size:20px;">
+        <svg viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+          <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+        </svg>
+        Efferent<span class="hq">HQ</span>
+      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a>
+        <a href="index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul>
+        <li><a href="pricing.html">Cal Consumer</a></li>
+        <li><a href="#">Cal Lattice</a></li>
+        <li><a href="#">Discovery</a></li>
+        <li><a href="#">Reflex</a></li>
+        <li><a href="#">Cal API</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul>
+        <li><a href="resources.html">Blog</a></li>
+        <li><a href="resources.html">Platform Brief</a></li>
+        <li><a href="resources.html">Technical Docs</a></li>
+        <li><a href="resources.html">API Documentation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#">Press</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EfferentHQ Inc. All rights reserved.</p>
+      <p>Sovereign Intelligence. Computable Confidence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="particles.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initParticles('about-canvas', { count: 60, speed: 0.15, connectionDist: 110, maxOpacity: 0.4 });
+  });
+</script>
+</body>
+</html>

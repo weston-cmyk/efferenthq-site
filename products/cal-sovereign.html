@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cal Sovereign — EfferentHQ</title>
+  <meta name="description" content="Cal Sovereign is air-gapped deployment for privacy-critical teams. Maximum intelligence. Zero data egress — guaranteed. For regulated industries, government, and organizations where data exposure is not an option.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .guarantee-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .guarantee-card { background:var(--bg-card); border:1px solid rgba(245,158,11,0.2); border-radius:var(--radius-lg); padding:28px; }
+    .guarantee-card h4 { font-size:16px; font-weight:700; color:var(--white); margin-bottom:10px; }
+    .guarantee-card p { font-size:14px; color:var(--text-secondary); line-height:1.65; }
+    .guarantee-icon { width:44px; height:44px; border-radius:10px; background:rgba(245,158,11,0.1); display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+    @media (max-width:768px) { .guarantee-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:520px) { .guarantee-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown"><a href="index.html" class="active">Products<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers</span></a>
+            <a href="cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment</span></a>
+            <a href="specialists.html" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons</span></a>
+            <a href="cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your data estate</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signals</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../pricing.html">Pricing</a></li><li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding-bottom:120px;">
+  <canvas id="sov-canvas"></canvas>
+  <div class="container page-hero-content">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:100px;padding:6px 16px;margin-bottom:28px;">
+      <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;">Cal — Air-Gapped Deployment</span>
+    </div>
+    <h1 class="headline-xl" style="margin-bottom:20px;">Intelligence Without<br><span class="text-gold">Exposure.</span></h1>
+    <p class="body-lg" style="max-width:680px;margin-bottom:40px;">Cal Sovereign is Cal Consumer deployed entirely within your own environment. Air-gapped. Zero data egress — not as a policy, as an architectural guarantee. For organizations where data exposure is simply not an option.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="../index.html#contact" class="btn btn-primary btn-lg" style="background:var(--gold);border-color:var(--gold);color:#0E0F1A;">Request Sovereign Access →</a>
+      <a href="cal-consumer.html" class="btn btn-outline btn-lg">Compare to Cal Consumer</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);padding:64px 0;">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--gold);">The Sovereign Guarantee</p>
+    <h2 class="headline-lg" style="margin-bottom:48px;">What "Zero Data Egress" <span class="text-gold">Actually Means</span></h2>
+    <div class="guarantee-grid">
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <h4>Deployed to Your Environment</h4>
+        <p>Cal Sovereign runs entirely on infrastructure you control — on-prem, private cloud, or air-gapped hardware. We never touch your queries, your answers, or your data.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <h4>No External API Calls</h4>
+        <p>Cal's inference happens locally. No calls to OpenAI, Anthropic, Google, or any third-party service. The intelligence is in your building. The model weights are on your hardware.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>No Training on Your Data</h4>
+        <p>Your queries and sessions are never used to train or improve any model — not ours, not anyone's. What you ask Cal stays in your environment, period.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+        <h4>Auditable Architecture</h4>
+        <p>We provide full architecture documentation and deployment verification so your security team can confirm zero-egress compliance independently — not just take our word for it.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg></div>
+        <h4>Full Compliance Support</h4>
+        <p>Documentation packages for HIPAA, FedRAMP, SOC 2, GDPR, and other regulatory frameworks — Cal Sovereign is built to pass the audits you already face.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <h4>Updates Without Exposure</h4>
+        <p>Model and platform updates are delivered as signed packages you deploy on your timeline — no automatic connections to EfferentHQ infrastructure required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Who Cal Sovereign Is For</p>
+    <h2 class="headline-lg" style="margin-bottom:40px;">Industries Where <span class="text-gold">Privacy Is Non-Negotiable</span></h2>
+    <div class="use-case-grid">
+      <div class="use-case-card" style="border-color:rgba(245,158,11,0.15);">
+        <div class="use-case-icon" style="background:rgba(245,158,11,0.1);color:var(--gold);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h4>Healthcare</h4><p>HIPAA-compliant intelligence for clinical teams, researchers, and health systems where patient data cannot leave the environment under any circumstances.</p>
+      </div>
+      <div class="use-case-card" style="border-color:rgba(245,158,11,0.15);">
+        <div class="use-case-icon" style="background:rgba(245,158,11,0.1);color:var(--gold);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <h4>Government &amp; Defense</h4><p>Classified and sensitive workloads require air-gapped deployment. Cal Sovereign is the only AI intelligence platform designed from the ground up for this environment.</p>
+      </div>
+      <div class="use-case-card" style="border-color:rgba(245,158,11,0.15);">
+        <div class="use-case-icon" style="background:rgba(245,158,11,0.1);color:var(--gold);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <h4>Legal &amp; Financial Services</h4><p>Attorney-client privilege, insider trading controls, and financial data governance all require environments where AI queries cannot be logged externally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-banner">
+      <h2 class="headline-lg">Cal Sovereign is Available by Request</h2>
+      <p class="body-lg">Tell us about your environment and compliance requirements. We'll scope a deployment proposal within 48 hours.</p>
+      <div class="cta-banner-actions">
+        <a href="../index.html#contact" class="btn btn-primary btn-lg" style="background:var(--gold);border-color:var(--gold);color:#0E0F1A;">Request Sovereign Access →</a>
+        <a href="../pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top"><a href="../index.html" class="nav-logo" style="font-size:20px;"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+      <div style="display:flex;gap:12px;"><a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a><a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a></div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="cal-sovereign.html">Cal Sovereign</a></li><li><a href="specialists.html">Specialists</a></li><li><a href="cal-api.html">Cal API</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Blog</a></li><li><a href="../resources.html">Platform Brief</a></li><li><a href="../resources.html">Technical Docs</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p></div>
+  </div>
+</footer>
+<script src="../particles.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { initParticles('sov-canvas', { count: 60, speed: 0.15, connectionDist: 100, maxOpacity: 0.4, color: '245,158,11' }); });</script>
+</body>
+</html>

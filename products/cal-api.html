@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cal API — EfferentHQ</title>
+  <meta name="description" content="Embed Cal's verified intelligence into your own product. REST API with confidence scores, evidence trails, and full sovereignty guarantees.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .code-block { background:#0A0B14; border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:28px; font-family:'Monaco','Menlo','Courier New',monospace; font-size:13px; line-height:1.7; overflow-x:auto; }
+    .code-block .k { color:#7B93FF; } .code-block .s { color:#34D399; } .code-block .n { color:#F1F5F9; } .code-block .c { color:#64748B; } .code-block .num { color:#F59E0B; }
+    .api-feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .api-feature { background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:28px; }
+    .api-feature h4 { font-size:16px; font-weight:700; color:var(--white); margin-bottom:10px; }
+    .api-feature p { font-size:14px; color:var(--text-secondary); line-height:1.65; }
+    .api-icon { width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+    @media (max-width:768px) { .api-feature-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:520px) { .api-feature-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown"><a href="index.html" class="active">Products<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers</span></a>
+            <a href="cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment</span></a>
+            <a href="specialists.html" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons</span></a>
+            <a href="cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your data estate</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signals</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../pricing.html">Pricing</a></li><li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding-bottom:120px;">
+  <canvas id="api-canvas"></canvas>
+  <div class="container page-hero-content">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.25);border-radius:100px;padding:6px 16px;margin-bottom:28px;">
+      <span style="font-size:11px;font-weight:700;color:#A855F7;letter-spacing:1.5px;text-transform:uppercase;">Cal — Developer Platform</span>
+    </div>
+    <h1 class="headline-xl" style="margin-bottom:20px;">Embed Verified Intelligence<br><span style="color:#A855F7;">Into Your Product.</span></h1>
+    <p class="body-lg" style="max-width:680px;margin-bottom:40px;">The Cal API brings confidence-scored, verified intelligence into any product you build. REST API. Clear response schemas. Every answer comes with a confidence score, source count, and evidence trail — exactly as you'd get in Cal Consumer.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="../index.html#contact" class="btn btn-primary btn-lg" style="background:#A855F7;border-color:#A855F7;">Request API Access →</a>
+      <a href="../resources.html" class="btn btn-outline btn-lg">View API Documentation</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);padding:64px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <div>
+        <p class="eyebrow" style="color:#A855F7;">Simple Integration</p>
+        <h2 class="headline-lg" style="margin-bottom:20px;">One Request. Verified Answer.<br>Confidence Score Included.</h2>
+        <p class="body-md" style="margin-bottom:20px;">The Cal API is designed for product teams who want to ship, not spend weeks on ML infrastructure. Send a query, get back a verified answer with a confidence score and source citations. Handle uncertainty in your UI — because Cal will tell you when it's not sure.</p>
+        <p class="body-md">Every API response follows the same schema: answer, confidence score (0–100), source count, evidence summary, and an honest uncertainty flag when confidence falls below your configured threshold.</p>
+      </div>
+      <div>
+        <div class="code-block">
+          <span class="c">// Request</span><br>
+          <span class="k">POST</span> <span class="s">/v1/query</span><br><br>
+          {<br>
+          &nbsp;&nbsp;<span class="s">"query"</span>: <span class="s">"What is the current FDA approval status for pembrolizumab in NSCLC?"</span>,<br>
+          &nbsp;&nbsp;<span class="s">"domain"</span>: <span class="s">"medicine"</span>,<br>
+          &nbsp;&nbsp;<span class="s">"confidence_threshold"</span>: <span class="num">70</span><br>
+          }<br><br>
+          <span class="c">// Response</span><br>
+          {<br>
+          &nbsp;&nbsp;<span class="s">"answer"</span>: <span class="s">"Pembrolizumab is FDA-approved for first-line NSCLC with PD-L1 ≥1% (monotherapy) and in combination with chemotherapy regardless of PD-L1 expression..."</span>,<br>
+          &nbsp;&nbsp;<span class="s">"confidence"</span>: <span class="num">94</span>,<br>
+          &nbsp;&nbsp;<span class="s">"sources"</span>: <span class="num">18</span>,<br>
+          &nbsp;&nbsp;<span class="s">"verified"</span>: <span class="k">true</span>,<br>
+          &nbsp;&nbsp;<span class="s">"uncertainty_flag"</span>: <span class="k">false</span><br>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">API Features</p>
+    <h2 class="headline-lg" style="margin-bottom:40px;">Everything You Need. <span style="color:#A855F7;">Nothing You Don't.</span></h2>
+    <div class="api-feature-grid">
+      <div class="api-feature"><div class="api-icon" style="background:rgba(168,85,247,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>Confidence Scores in Every Response</h4><p>Every API call returns a 0–100 confidence score, mathematically computed. Build uncertainty handling directly into your product UX.</p></div>
+      <div class="api-feature"><div class="api-icon" style="background:rgba(77,107,254,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h4>Source Citations</h4><p>Every response includes source count and evidence summary. Build citation UI that your users can actually trust and verify.</p></div>
+      <div class="api-feature"><div class="api-icon" style="background:rgba(52,211,153,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h4>Zero Data Egress</h4><p>Your queries are not logged for training. Cal API can be deployed with zero-egress guarantees — the same sovereignty as Cal Sovereign, via API.</p></div>
+      <div class="api-feature"><div class="api-icon" style="background:rgba(245,158,11,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg></div><h4>Domain Specialist Access</h4><p>Route queries to Medicine, Law, Finance, or Climate specialists via API — the same domain depth available in Cal Consumer Expert.</p></div>
+      <div class="api-feature"><div class="api-icon" style="background:rgba(168,85,247,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div><h4>Clean REST Interface</h4><p>Standard REST API with JSON request/response. No proprietary SDK required — integrate in any language in minutes.</p></div>
+      <div class="api-feature"><div class="api-icon" style="background:rgba(52,211,153,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg></div><h4>Usage Analytics</h4><p>Full visibility into query volume, confidence score distributions, and response latency — so you can monitor intelligence quality in your product.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-banner">
+      <h2 class="headline-lg">Cal API Access Available Now</h2>
+      <p class="body-lg">Request access and get your API keys within 24 hours. We'll walk you through the integration in a 30-minute call.</p>
+      <div class="cta-banner-actions">
+        <a href="../index.html#contact" class="btn btn-primary btn-lg" style="background:#A855F7;border-color:#A855F7;">Request API Access →</a>
+        <a href="../resources.html" class="btn btn-outline btn-lg">Read the Docs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top"><a href="../index.html" class="nav-logo" style="font-size:20px;"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+      <div style="display:flex;gap:12px;"><a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a><a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a></div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="cal-sovereign.html">Cal Sovereign</a></li><li><a href="specialists.html">Specialists</a></li><li><a href="cal-api.html">Cal API</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Blog</a></li><li><a href="../resources.html">Platform Brief</a></li><li><a href="../resources.html">Technical Docs</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p></div>
+  </div>
+</footer>
+<script src="../particles.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { initParticles('api-canvas', { count: 60, speed: 0.2, connectionDist: 110, maxOpacity: 0.38, color: '168,85,247' }); });</script>
+</body>
+</html>

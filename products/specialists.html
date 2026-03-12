@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialists — EfferentHQ</title>
+  <meta name="description" content="Cal Specialists are domain-specific intelligence add-ons for Medicine, Law, Finance, and Climate. Expert-level depth for fields where getting it wrong has real consequences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .domain-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+    .domain-card { background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-xl); padding:40px; transition:var(--transition); }
+    .domain-card:hover { border-color:var(--border-medium); transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+    .domain-icon { width:56px; height:56px; border-radius:14px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
+    .domain-card h3 { font-size:22px; font-weight:700; color:var(--white); margin-bottom:12px; }
+    .domain-card p { font-size:15px; color:var(--text-secondary); line-height:1.7; margin-bottom:16px; }
+    .domain-examples { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .domain-examples li { font-size:13px; color:var(--text-muted); display:flex; gap:8px; align-items:flex-start; }
+    .domain-examples li::before { content:'→'; color:var(--blue); flex-shrink:0; }
+    @media (max-width:768px) { .domain-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown"><a href="index.html" class="active">Products<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers</span></a>
+            <a href="cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment</span></a>
+            <a href="specialists.html" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons</span></a>
+            <a href="cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section"><div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your data estate</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signals</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../pricing.html">Pricing</a></li><li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding-bottom:120px;">
+  <canvas id="spec-canvas"></canvas>
+  <div class="container page-hero-content">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.25);border-radius:100px;padding:6px 16px;margin-bottom:28px;">
+      <span style="font-size:11px;font-weight:700;color:var(--green);letter-spacing:1.5px;text-transform:uppercase;">Cal — Domain Add-Ons</span>
+    </div>
+    <h1 class="headline-xl" style="margin-bottom:20px;">Domain Intelligence.<br><span class="text-green">Deepened.</span></h1>
+    <p class="body-lg" style="max-width:680px;margin-bottom:40px;">Cal Specialists bring expert-level domain knowledge to Cal Consumer. Available for Medicine, Law, Finance, and Climate — the fields where generic AI answers aren't good enough and getting it wrong has real consequences.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="../pricing.html" class="btn btn-primary btn-lg">Get Started from $15/mo →</a>
+      <a href="cal-consumer.html" class="btn btn-outline btn-lg">Requires Cal Expert+</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Available Specialists</p>
+    <h2 class="headline-lg" style="margin-bottom:48px;">Four Domains. <span class="text-green">Expert Depth.</span></h2>
+    <div class="domain-grid">
+      <div class="domain-card">
+        <div class="domain-icon" style="background:rgba(52,211,153,0.1);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h3>Medicine</h3>
+        <p>Clinical protocols, pharmacology, diagnostic criteria, research literature, and regulatory standards — with confidence scores calibrated to medical evidence quality. Built for clinicians, researchers, and health systems who need to trust what they read.</p>
+        <ul class="domain-examples">
+          <li>Drug interactions and contraindications with citation trails</li>
+          <li>Clinical trial status and efficacy data by indication</li>
+          <li>Diagnostic criteria from current clinical guidelines</li>
+          <li>FDA approval status and post-market surveillance data</li>
+        </ul>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-muted);">$25/mo — Available at Expert tier and above</p>
+      </div>
+      <div class="domain-card">
+        <div class="domain-icon" style="background:rgba(77,107,254,0.1);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <h3>Law</h3>
+        <p>Statutory law, case precedent, regulatory frameworks, and jurisdiction-specific requirements — with source citations and explicit confidence scoring on legal questions. Not legal advice. Verified legal intelligence.</p>
+        <ul class="domain-examples">
+          <li>Case law and precedent across major jurisdictions</li>
+          <li>Regulatory requirements by industry and geography</li>
+          <li>Contract clause analysis and risk identification</li>
+          <li>Recent legislative changes and pending regulation</li>
+        </ul>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-muted);">$25/mo — Available at Expert tier and above</p>
+      </div>
+      <div class="domain-card">
+        <div class="domain-icon" style="background:rgba(245,158,11,0.1);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Finance</h3>
+        <p>Market structure, regulatory frameworks, financial instruments, accounting standards, and economic research — with confidence scores calibrated to source authority and recency.</p>
+        <ul class="domain-examples">
+          <li>Regulatory requirements: SEC, FINRA, Basel, MiFID</li>
+          <li>Accounting standards: GAAP, IFRS by industry and situation</li>
+          <li>Financial instrument structures and risk characteristics</li>
+          <li>Economic research and policy impact analysis</li>
+        </ul>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-muted);">$20/mo — Available at Expert tier and above</p>
+      </div>
+      <div class="domain-card">
+        <div class="domain-icon" style="background:rgba(52,211,153,0.1);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v18"/></svg></div>
+        <h3>Climate</h3>
+        <p>Climate science, policy frameworks, emissions data, and sustainability standards — with explicit confidence scoring on projections vs. established findings. For organizations navigating ESG requirements, carbon accounting, and climate risk.</p>
+        <ul class="domain-examples">
+          <li>IPCC findings vs. current peer-reviewed research</li>
+          <li>ESG reporting frameworks: GRI, TCFD, ISSB, CDP</li>
+          <li>Carbon accounting methodologies and scope definitions</li>
+          <li>Climate risk assessment and scenario analysis</li>
+        </ul>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-muted);">$15/mo — Available at Expert tier and above</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-banner">
+      <h2 class="headline-lg">Domain Intelligence Starts at $15/mo</h2>
+      <p class="body-lg">Requires Cal Expert tier or above. Add any Specialist to your existing plan instantly.</p>
+      <div class="cta-banner-actions">
+        <a href="../pricing.html" class="btn btn-primary btn-lg">View Pricing →</a>
+        <a href="cal-consumer.html" class="btn btn-outline btn-lg">Learn About Cal Expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top"><a href="../index.html" class="nav-logo" style="font-size:20px;"><svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/><path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="19" r="3" fill="#4D6BFE"/></svg>Efferent<span class="hq">HQ</span></a>
+      <div style="display:flex;gap:12px;"><a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a><a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a></div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="cal-sovereign.html">Cal Sovereign</a></li><li><a href="specialists.html">Specialists</a></li><li><a href="cal-api.html">Cal API</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Blog</a></li><li><a href="../resources.html">Platform Brief</a></li><li><a href="../resources.html">Technical Docs</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p></div>
+  </div>
+</footer>
+<script src="../particles.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { initParticles('spec-canvas', { count: 60, speed: 0.18, connectionDist: 110, maxOpacity: 0.38, color: '52,211,153' }); });</script>
+</body>
+</html>

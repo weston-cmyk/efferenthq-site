@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — EfferentHQ</title>
+  <meta name="description" content="Start free. Upgrade when you need more. Four tiers for Cal Consumer. Custom pricing for Cal Lattice enterprise deployments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+        <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+      </svg>
+      Efferent<span class="hq">HQ</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Products
+          <svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="pricing.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers for researchers &amp; professionals</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment for privacy-critical teams</span></a>
+            <a href="#" class="dropdown-item"><strong>Specialists</strong><span>Domain add-ons: Medicine, Law, Finance, Climate</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal API</strong><span>Developer platform — embed Cal in your product</span></a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="#" class="dropdown-item"><strong>Discovery</strong><span>See your entire data estate as a single navigable map</span></a>
+            <a href="#" class="dropdown-item"><strong>Reflex</strong><span>Real-time business intelligence and signal detection</span></a>
+            <a href="#" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + Cal Intelligence</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PRICING HERO ── -->
+<section class="page-hero">
+  <canvas id="pricing-canvas"></canvas>
+  <div class="container page-hero-content" style="text-align:center;">
+    <p class="eyebrow">Pricing</p>
+    <h1 class="headline-xl" style="margin-bottom:16px;">Simple Pricing. <span class="text-blue">No Surprises.</span></h1>
+    <p class="body-lg" style="max-width:560px;margin:0 auto;">Start free. Upgrade when you need more. Enterprise teams get custom pricing built around their data estate.</p>
+  </div>
+</section>
+
+<!-- ── PRICING TABS ── -->
+<section class="section-lg">
+  <div class="container">
+    <div class="pricing-tabs">
+      <button class="pricing-tab active" data-tab="consumer" onclick="switchTab('consumer')">Cal Consumer</button>
+      <button class="pricing-tab" data-tab="enterprise" onclick="switchTab('enterprise')">Cal Lattice / Enterprise</button>
+    </div>
+
+    <!-- CONSUMER PANEL -->
+    <div class="pricing-panel active" id="panel-consumer">
+      <div class="pricing-grid">
+
+        <!-- FREE -->
+        <div class="pricing-card">
+          <div class="tier-name">Free</div>
+          <div class="tier-price">
+            <span class="amount">$0</span>
+            <span class="period"> /forever</span>
+          </div>
+          <p class="tier-desc">Get started with Cal — no credit card required.</p>
+          <ul class="features-list">
+            <li>Verified answers with confidence scores</li>
+            <li>Basic evidence trails</li>
+            <li>Standard response times</li>
+            <li>50 queries / day</li>
+            <li>Community support</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started Free</a>
+        </div>
+
+        <!-- PRO -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="tier-name">Pro</div>
+          <div class="tier-price">
+            <span class="amount">$35</span>
+            <span class="period"> /month</span>
+          </div>
+          <p class="tier-desc">For professionals who need reliable intelligence daily.</p>
+          <ul class="features-list">
+            <li>Everything in Free</li>
+            <li>Unlimited queries</li>
+            <li>Full reasoning chains</li>
+            <li>Priority response times</li>
+            <li>Extended session history</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;">Start Pro Trial</a>
+        </div>
+
+        <!-- EXPERT -->
+        <div class="pricing-card">
+          <div class="tier-name">Expert</div>
+          <div class="tier-price">
+            <span class="amount">$50</span>
+            <span class="period"> /month</span>
+          </div>
+          <p class="tier-desc">Deep, auditable intelligence for researchers and analysts.</p>
+          <ul class="features-list">
+            <li>Everything in Pro</li>
+            <li>Advanced confidence breakdowns</li>
+            <li>Full provenance trails</li>
+            <li>Specialist domain access</li>
+            <li>Citation export</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="width:100%;justify-content:center;">Start Expert Trial</a>
+        </div>
+
+        <!-- SOVEREIGN -->
+        <div class="pricing-card sovereign">
+          <div class="sovereign-badge">Sovereign</div>
+          <div class="tier-name" style="color:var(--gold);">Sovereign</div>
+          <div class="tier-price">
+            <span class="amount" style="color:var(--gold);">$100</span>
+            <span class="period"> /month</span>
+          </div>
+          <p class="tier-desc">Maximum intelligence with full data sovereignty.</p>
+          <ul class="features-list">
+            <li>Everything in Expert</li>
+            <li>Zero data egress guarantee</li>
+            <li>Dedicated inference resources</li>
+            <li>Custom domain configuration</li>
+            <li>White-glove onboarding</li>
+            <li>Direct engineering support</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--gold);border-color:var(--gold);color:#0E0F1A;">Start Sovereign Trial</a>
+        </div>
+
+      </div>
+
+      <!-- Specialist add-ons note -->
+      <div style="text-align:center;margin-top:40px;padding:20px;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);max-width:700px;margin-left:auto;margin-right:auto;">
+        <p style="font-size:14px;color:var(--text-secondary);">
+          <strong style="color:var(--white);">Specialist Add-ons:</strong> Deep domain knowledge in Medicine, Law, Finance, and Climate. Available at Expert tier and above — $15–25/mo per domain.
+        </p>
+      </div>
+    </div>
+
+    <!-- ENTERPRISE PANEL -->
+    <div class="pricing-panel" id="panel-enterprise">
+      <div class="enterprise-pricing">
+        <div>
+          <p class="eyebrow" style="color:var(--green);">Cal Lattice Platform</p>
+          <h3 class="headline-md" style="margin-bottom:16px;">Custom Pricing Built Around Your Data Estate.</h3>
+          <p class="body-md" style="margin-bottom:20px;">Every enterprise deployment is different. Your pricing depends on data environment size, engines needed, and deployment model. We'll build a proposal tailored to your organization.</p>
+          <p class="body-sm" style="margin-bottom:28px;">All Lattice deployments include: zero data egress, governed access controls, dedicated support, and SLA guarantees.</p>
+          <a href="index.html#contact" class="btn btn-green">Schedule Enterprise Demo →</a>
+        </div>
+        <div class="enterprise-mini-cards">
+          <div class="mini-card">
+            <h5>Discovery</h5>
+            <p>Data estate mapping &amp; knowledge rationalization</p>
+          </div>
+          <div class="mini-card">
+            <h5>Reflex</h5>
+            <p>Real-time signal detection &amp; governed alerts</p>
+          </div>
+          <div class="mini-card">
+            <h5>ROI Engine</h5>
+            <p>Outcome tracking &amp; decision attribution</p>
+          </div>
+          <div class="mini-card">
+            <h5>Cal Enterprise</h5>
+            <p>Full platform — all three engines together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FAQ ── -->
+    <div class="faq-section">
+      <h2 class="headline-md" style="text-align:center;margin-bottom:48px;">Frequently Asked <span class="text-blue">Questions</span></h2>
+
+      <div style="max-width:760px;margin:0 auto;">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I switch plans at any time?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Upgrade, downgrade, or cancel anytime. Changes take effect at your next billing cycle. No penalties, no lock-in.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What does "zero data egress" mean exactly?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Your data never leaves your environment. Cal processes everything locally — no external API calls, no third-party data sharing, no training on your inputs. This applies to Cal Consumer (session-isolated) and is a hard infrastructure guarantee for Cal Lattice deployments.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do I need Cal Consumer to use Cal Lattice?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">No. They're completely independent products. Cal Consumer is for individuals and teams who need verified intelligence through a cloud interface. Cal Lattice is an enterprise platform deployed to your own infrastructure — it has nothing to do with a Cal Consumer subscription.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What's included in Specialist domain access?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Specialists are domain-specific knowledge add-ons that give Cal deep expertise in Medicine, Law, Finance, and Climate. They're available at Expert tier and above, priced at $15–25/mo per domain depending on specialization depth.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How is enterprise pricing determined?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Enterprise pricing is based on three factors: the size of your data environment, which engines you need (Discovery, Reflex, ROI Engine, or the full stack), and your deployment model. Schedule a demo and we'll scope a custom proposal within 48 hours.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is there a free trial for paid tiers?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Pro and Expert tiers include a 14-day free trial with no credit card required. Sovereign tier trials are available on request — reach out to hello@efferenthq.com.</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="nav-logo" style="font-size:20px;">
+        <svg viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+          <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+        </svg>
+        Efferent<span class="hq">HQ</span>
+      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a>
+        <a href="index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col"><h5>Products</h5><ul>
+        <li><a href="pricing.html">Cal Consumer</a></li>
+        <li><a href="#">Cal Lattice</a></li>
+        <li><a href="#">Discovery</a></li>
+        <li><a href="#">Reflex</a></li>
+        <li><a href="#">Cal API</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul>
+        <li><a href="resources.html">Blog</a></li>
+        <li><a href="resources.html">Platform Brief</a></li>
+        <li><a href="resources.html">Technical Docs</a></li>
+        <li><a href="resources.html">API Documentation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#">Press</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EfferentHQ Inc. All rights reserved.</p>
+      <p>Sovereign Intelligence. Computable Confidence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="particles.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initParticles('pricing-canvas', { count: 50, speed: 0.15, connectionDist: 100, maxOpacity: 0.35 });
+  });
+</script>
+</body>
+</html>

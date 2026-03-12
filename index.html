@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EfferentHQ — Sovereign Intelligence. Computable Confidence.</title>
+  <meta name="description" content="Cal doesn't predict — it knows. Every answer is backed by a mathematically-derived confidence score. When Cal isn't sure, it tells you.">
+  <meta property="og:title" content="EfferentHQ — Sovereign Intelligence">
+  <meta property="og:description" content="Cal doesn't predict — it knows. Every answer is backed by a mathematically-derived confidence score.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+        <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+      </svg>
+      Efferent<span class="hq">HQ</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="products/index.html">Products
+          <svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
+            <a href="products/cal-consumer.html" class="dropdown-item">
+              <strong>Cal Consumer</strong>
+              <span>Verified answers for researchers &amp; professionals</span>
+            </a>
+            <a href="products/cal-sovereign.html" class="dropdown-item">
+              <strong>Cal Sovereign</strong>
+              <span>Air-gapped deployment for privacy-critical teams</span>
+            </a>
+            <a href="products/specialists.html" class="dropdown-item">
+              <strong>Specialists</strong>
+              <span>Domain add-ons: Medicine, Law, Finance, Climate</span>
+            </a>
+            <a href="products/cal-api.html" class="dropdown-item">
+              <strong>Cal API</strong>
+              <span>Developer platform — embed Cal in your product</span>
+            </a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section">
+            <div class="dropdown-section-label">Cal Lattice Platform</div>
+            <a href="products/discovery.html" class="dropdown-item">
+              <strong>Discovery</strong>
+              <span>Map your entire data estate automatically</span>
+            </a>
+            <a href="products/reflex.html" class="dropdown-item">
+              <strong>Reflex</strong>
+              <span>Real-time signal detection and governed alerts</span>
+            </a>
+            <a href="products/roi-engine.html" class="dropdown-item">
+              <strong>ROI Engine</strong>
+              <span>Decision attribution and outcome tracking</span>
+            </a>
+            <a href="products/cal-enterprise.html" class="dropdown-item">
+              <strong>Cal Enterprise</strong>
+              <span>Full stack: Discovery + Reflex + Cal Intelligence</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Schedule Demo</a>
+      <button class="nav-mobile-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      Sovereign AI &nbsp;·&nbsp; Zero Data Egress &nbsp;·&nbsp; Computable Confidence
+    </div>
+    <h1 class="hero-title">
+      Sovereign Intelligence.<br>
+      <span class="blue-line">Computable Confidence.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Most AI gives you an answer and hopes you trust it. Cal gives you an answer, a confidence score, and the reasoning behind it. Mathematical certainty — not statistical approximation.
+    </p>
+    <div class="hero-ctas">
+      <a href="pricing.html" class="btn btn-primary btn-lg">Try Cal Free →</a>
+      <a href="products/index.html" class="btn btn-outline btn-lg">Explore the Full Platform →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURE STRIP ── -->
+<div class="feature-strip">
+  <div class="feature-strip-inner">
+    <div class="feature-strip-item">
+      <h4>Verified Knowledge Mesh</h4>
+      <p>Every fact lives in a typed knowledge graph — not weights in a black box. Traceable. Inspectable. Citeable. Always.</p>
+    </div>
+    <div class="feature-strip-item">
+      <h4>Computed Confidence</h4>
+      <p>A score from 0–100 on every response, mathematically derived. Not a vibe. Not a probability estimate. A number with real math behind it.</p>
+    </div>
+    <div class="feature-strip-item">
+      <h4>Zero Data Egress</h4>
+      <p>No call to OpenAI. No third-party log. Your queries don't move — we built the infrastructure to make that a guarantee, not a policy.</p>
+    </div>
+    <div class="feature-strip-item">
+      <h4>Intelligence That Compounds</h4>
+      <p>Cal's knowledge graph doesn't wait for a retrain. It absorbs, verifies, and integrates new information on its own — every day, every hour. Tomorrow's Cal is always better than today's.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── WHAT IS CAL ── -->
+<section class="section" id="what-is-cal">
+  <div class="container">
+    <div class="what-is-cal-grid">
+      <div>
+        <p class="eyebrow">What Is Cal?</p>
+        <h2 class="headline-lg" style="margin-bottom:24px;">The Deterministic Intelligence Layer.<br>No Guessing.<br>No Hallucinations.</h2>
+        <p class="body-lg" style="margin-bottom:20px;">Whether you're a researcher who needs answers you can cite, or a CTO who needs intelligence your board can trust — Cal was built for you.</p>
+        <p class="body-md" style="margin-bottom:20px;">Sovereign knowledge mesh. Deterministic reasoning pipeline. Adversarial verification on every output. Multi-language intelligence. Computed confidence scores — not probabilities, not estimates, scores with the math to back them up.</p>
+        <p class="body-md" style="margin-bottom:36px;">Cal runs entirely on its own infrastructure. No external API calls. No data leaving your environment. No third-party model dependency. Sovereign from the ground up.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="products/cal-consumer.html" class="btn btn-primary">Explore Cal Sovereign AI →</a>
+          <a href="products/discovery.html" class="btn btn-outline">Explore Business Intelligence Platform →</a>
+        </div>
+      </div>
+
+      <!-- Live confidence score visual — tabbed -->
+      <div class="cal-visual" style="background:linear-gradient(145deg, rgba(24,26,46,0.95), rgba(14,15,26,0.98));border:1px solid rgba(77,107,254,0.2);box-shadow:0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(77,107,254,0.06);border-radius:20px;padding:28px;">
+
+        <!-- Tab switcher -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 8px rgba(52,211,153,0.5);animation:pulse 2s infinite;"></div>
+            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin:0;">Cal — Live Response</p>
+          </div>
+          <div style="display:flex;gap:0;border-radius:10px;overflow:hidden;border:1px solid rgba(77,107,254,0.3);" id="calDemoTabs">
+            <button onclick="switchCalDemo('research')" id="tab-research" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:var(--green);color:#0E0F1A;letter-spacing:0.3px;">Research</button>
+            <button onclick="switchCalDemo('bi')" id="tab-bi" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:rgba(14,15,26,0.8);color:var(--text-muted);letter-spacing:0.3px;">Business Intelligence</button>
+          </div>
+        </div>
+
+        <!-- ══ RESEARCH EXAMPLE ══ -->
+        <div id="demo-research">
+          <div style="background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.18);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--blue-light);margin-bottom:6px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Query</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;line-height:1.5;">"Is there a link between gut microbiome composition and treatment response in late-stage melanoma patients?"</p>
+          </div>
+          <div style="background:rgba(52,211,153,0.04);border:1px solid rgba(52,211,153,0.15);border-radius:12px;padding:18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--green);margin-bottom:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Cal's Answer</p>
+            <p style="font-size:14px;color:var(--text-primary);line-height:1.7;margin-bottom:14px;">Yes. Patients with high <strong style="color:var(--white);">Faecalibacterium</strong> abundance showed <strong style="color:var(--white);">2.8x higher</strong> objective response rates to anti-PD-1 therapy across three independent cohorts (Gopalakrishnan et al., Matson et al., Routy et al.).</p>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div class="confidence-bar-wrap" style="flex:1;"><div class="confidence-bar-fill" style="width:93%;box-shadow:0 0 12px rgba(52,211,153,0.3);"></div></div>
+              <span style="font-size:26px;font-weight:800;color:var(--green);white-space:nowrap;">93%</span>
+            </div>
+          </div>
+          <div style="background:rgba(245,158,11,0.04);border:1px solid rgba(245,158,11,0.2);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--gold);margin-bottom:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Novel Connection Detected</p>
+            <p style="font-size:13px;color:var(--text-primary);line-height:1.7;margin-bottom:10px;">The same <strong style="color:var(--white);">Faecalibacterium signature</strong> appears in a 2025 Lancet cohort studying <strong style="color:var(--white);">SSRI non-responders in treatment-resistant depression</strong> — suggesting a shared gut-immune axis across oncology and psychiatry.</p>
+            <p style="font-size:11px;color:var(--text-muted);"><strong style="color:var(--gold);">Contested:</strong> No direct citation links these fields. Cal surfaced it via cross-domain traversal. Link confidence: <strong style="color:var(--gold);">41%</strong> — flagged for expert review.</p>
+          </div>
+          <div style="display:flex;gap:8px;margin-bottom:14px;">
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.15);border-radius:10px;"><p class="label">Sources</p><p class="value" style="color:var(--blue);font-size:20px;">47</p></div>
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.12);border-radius:10px;"><p class="label">Verified</p><p class="value" style="color:var(--green);font-size:20px;">✓</p></div>
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.12);border-radius:10px;"><p class="label">Novel Links</p><p class="value" style="color:var(--gold);font-size:20px;">1</p></div>
+          </div>
+          <div style="border-top:1px solid rgba(77,107,254,0.1);padding-top:12px;">
+            <p style="font-size:11px;color:var(--text-muted);line-height:1.6;">Cal traverses across domains and surfaces connections no one has published yet. When the link is contested, it tells you.</p>
+          </div>
+        </div>
+
+        <!-- ══ BUSINESS INTELLIGENCE EXAMPLE ══ -->
+        <div id="demo-bi" style="display:none;">
+          <div style="background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.18);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--blue-light);margin-bottom:6px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Query</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;line-height:1.5;">"What's our projected Q3 revenue if enterprise churn stays at current rate and the mid-market pipeline converts at historical averages?"</p>
+          </div>
+          <div style="background:rgba(52,211,153,0.04);border:1px solid rgba(52,211,153,0.15);border-radius:12px;padding:18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--green);margin-bottom:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Cal's Answer</p>
+            <p style="font-size:14px;color:var(--text-primary);line-height:1.7;margin-bottom:14px;">Projected Q3 revenue: <strong style="color:var(--white);">$4.2M–$4.6M</strong>. Enterprise churn is running at <strong style="color:var(--white);">3.1% monthly</strong> (up from 2.4% in Q1) — if unchanged, you lose ~$380K in recurring revenue by September. Mid-market pipeline has <strong style="color:var(--white);">$2.1M in Stage 3+</strong> deals; at your historical 34% close rate, that adds ~$714K. Net: you're tracking <strong style="color:var(--white);">6% below</strong> the board target of $4.8M.</p>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div class="confidence-bar-wrap" style="flex:1;"><div class="confidence-bar-fill" style="width:89%;box-shadow:0 0 12px rgba(52,211,153,0.3);"></div></div>
+              <span style="font-size:26px;font-weight:800;color:var(--green);white-space:nowrap;">89%</span>
+            </div>
+          </div>
+          <div style="background:rgba(77,107,254,0.04);border:1px solid rgba(77,107,254,0.18);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+            <p style="font-size:10px;color:var(--blue-light);margin-bottom:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Cal — Insight</p>
+            <p style="font-size:13px;color:var(--text-primary);line-height:1.7;margin-bottom:10px;">The churn spike correlates with accounts that had <strong style="color:var(--white);">no QBR in the last 90 days</strong> — 78% of churned accounts fall in this group. Reactivating QBRs for your <strong style="color:var(--white);">12 at-risk enterprise accounts</strong> could recover an estimated <strong style="color:var(--white);">$210K</strong> in Q3 ARR.</p>
+            <p style="font-size:11px;color:var(--text-muted);">Insight confidence: <strong style="color:var(--blue-light);">72%</strong> — based on 8 quarters of historical QBR-churn correlation data.</p>
+          </div>
+          <div style="display:flex;gap:8px;margin-bottom:14px;">
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.15);border-radius:10px;"><p class="label">Tables Queried</p><p class="value" style="color:var(--blue);font-size:20px;">6</p></div>
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.12);border-radius:10px;"><p class="label">Response Time</p><p class="value" style="color:var(--green);font-size:20px;">4.1s</p></div>
+            <div class="stat-box" style="flex:1;text-align:center;background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.12);border-radius:10px;"><p class="label">Data Egress</p><p class="value" style="color:var(--green);font-size:20px;">0</p></div>
+          </div>
+          <div style="border-top:1px solid rgba(77,107,254,0.1);padding-top:12px;">
+            <p style="font-size:11px;color:var(--text-muted);line-height:1.6;">A question that normally takes a revenue ops team a week of spreadsheet wrangling — answered in 4 seconds with a confidence score and an actionable insight attached.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOR INDIVIDUALS / FOR ENTERPRISE ── -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="split-section">
+      <div class="split-panel">
+        <p class="eyebrow">For Individuals &amp; Teams</p>
+        <h2 class="headline-md" style="margin-bottom:20px;">The End of Guessing</h2>
+        <p class="body-md" style="margin-bottom:16px;">Cal Consumer gives researchers, analysts, academics, and professionals an AI that earns your trust instead of demanding it. Every answer comes with an honest confidence score, full evidence trails, and transparent reasoning.</p>
+        <p class="body-md" style="margin-bottom:16px;">When Cal doesn't know, it says so. No hallucinations. No black boxes. Just verified intelligence you can build on.</p>
+        <p class="body-sm" style="margin-bottom:32px;">Runs entirely on EfferentHQ infrastructure — no external API dependencies, no data leaving your session. Four tiers from Free to Sovereign.</p>
+        <a href="pricing.html" class="btn btn-primary">Try Cal Free →</a>
+      </div>
+
+      <div class="split-panel" style="background:rgba(20,21,38,0.6);">
+        <p class="eyebrow" style="color:var(--green);">For Enterprise</p>
+        <h2 class="headline-md" style="margin-bottom:20px;">Every Table. Every Signal. Every Decision. <span class="text-blue">Governed.</span></h2>
+        <p class="body-md" style="margin-bottom:28px;">Three engines. One pipeline. Discovery maps your data, Reflex monitors and activates, and the ROI Engine measures what every signal was worth. No other platform does all three.</p>
+
+        <div class="engine-row">
+          <div class="engine-icon" style="background:rgba(77,107,254,0.1);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <div>
+            <p style="font-size:14px;font-weight:700;color:var(--white);margin-bottom:2px;">Discovery</p>
+            <p class="body-sm">Maps your entire data environment into a single navigable knowledge structure. Thousands of tables rationalized in seconds.</p>
+          </div>
+        </div>
+
+        <div class="engine-row">
+          <div class="engine-icon" style="background:rgba(52,211,153,0.1);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div>
+            <p style="font-size:14px;font-weight:700;color:var(--white);margin-bottom:2px;">Reflex</p>
+            <p class="body-sm">Real-time signal detection and governed response layer. Fires confidence-scored alerts to Slack, CRM, or any channel your team already uses.</p>
+          </div>
+        </div>
+
+        <div class="engine-row" style="margin-bottom:32px;">
+          <div class="engine-icon" style="background:rgba(245,158,11,0.1);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <div>
+            <p style="font-size:14px;font-weight:700;color:var(--white);margin-bottom:2px;">ROI Engine</p>
+            <p class="body-sm">Tracks what happens after the alert. Every decision attributed, every impact measured.</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-green">Schedule Enterprise Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIFFERENTIATORS ── -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <p class="eyebrow">Under the Hood</p>
+      <h2 class="headline-lg">Four Systems. <span class="text-blue">Zero Compromise.</span></h2>
+      <p class="body-md" style="max-width:600px;margin:16px auto 0;">Every AI claims to be accurate. Cal is the only one that can show you the math, the sources, and the verification pipeline behind every answer.</p>
+    </div>
+    <div class="differentiators-grid">
+
+      <div class="diff-item accent-blue" style="border-color:rgba(77,107,254,0.2);">
+        <div class="diff-accent-bar" style="background:linear-gradient(90deg,#4D6BFE,rgba(77,107,254,0.15));"></div>
+        <div class="diff-icon" style="background:rgba(77,107,254,0.1);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+        </div>
+        <p class="diff-number" style="color:var(--blue);">Confidence Engine</p>
+        <h3>Computable Confidence</h3>
+        <p>Not a probability estimate. Not a softmax output relabeled as "confidence." Cal derives mathematically grounded scores across multiple independent signals — computed, not approximated. When confidence is low, Cal tells you why.</p>
+        <div class="diff-tags">
+          <span class="diff-tag" style="background:rgba(77,107,254,0.15);color:#809CFF;">Bayesian Evidence Fusion</span>
+          <span class="diff-tag" style="background:rgba(77,107,254,0.15);color:#809CFF;">Multi-Signal Derivation</span>
+          <span class="diff-tag" style="background:rgba(77,107,254,0.15);color:#809CFF;">Chain-of-Thought Audit</span>
+          <span class="diff-tag" style="background:rgba(77,107,254,0.15);color:#809CFF;">Temporal Decay Modeling</span>
+        </div>
+      </div>
+
+      <div class="diff-item accent-green" style="border-color:rgba(52,211,153,0.2);">
+        <div class="diff-accent-bar" style="background:linear-gradient(90deg,#34D399,rgba(52,211,153,0.15));"></div>
+        <div class="diff-icon" style="background:rgba(52,211,153,0.1);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+        </div>
+        <p class="diff-number" style="color:var(--green);">Knowledge Architecture</p>
+        <h3>Sovereign Knowledge Mesh</h3>
+        <p>Every fact has provenance. Every relationship is classified. Every source is version-controlled. Not embeddings in a black box — deterministic traversal over verified, inspectable structure.</p>
+        <div class="diff-tags">
+          <span class="diff-tag" style="background:rgba(52,211,153,0.15);color:#6EE7B7;">Ontological Type System</span>
+          <span class="diff-tag" style="background:rgba(52,211,153,0.15);color:#6EE7B7;">Immutable Provenance Ledger</span>
+          <span class="diff-tag" style="background:rgba(52,211,153,0.15);color:#6EE7B7;">Semantic Edge Inference</span>
+          <span class="diff-tag" style="background:rgba(52,211,153,0.15);color:#6EE7B7;">Zero-Copy Sovereign Mesh</span>
+        </div>
+      </div>
+
+      <div class="diff-item accent-gold" style="border-color:rgba(245,158,11,0.2);">
+        <div class="diff-accent-bar" style="background:linear-gradient(90deg,#F59E0B,rgba(245,158,11,0.15));"></div>
+        <div class="diff-icon" style="background:rgba(245,158,11,0.1);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <p class="diff-number" style="color:var(--gold);">Verification Layer</p>
+        <h3>Adversarial Verification</h3>
+        <p>Before any answer reaches you, adversarial agents actively try to disprove it. Claims are challenged, sources are cross-examined, and contradictions are flagged — automatically, in parallel, on every single query.</p>
+        <div class="diff-tags">
+          <span class="diff-tag" style="background:rgba(245,158,11,0.15);color:#FBBF24;">Adversarial Agent Swarm</span>
+          <span class="diff-tag" style="background:rgba(245,158,11,0.15);color:#FBBF24;">Source Authority Ranking</span>
+          <span class="diff-tag" style="background:rgba(245,158,11,0.15);color:#FBBF24;">Claim Contradiction Graph</span>
+          <span class="diff-tag" style="background:rgba(245,158,11,0.15);color:#FBBF24;">Consensus Threshold Gate</span>
+        </div>
+      </div>
+
+      <div class="diff-item accent-purple" style="border-color:rgba(168,85,247,0.2);">
+        <div class="diff-accent-bar" style="background:linear-gradient(90deg,#A855F7,rgba(168,85,247,0.15));"></div>
+        <div class="diff-icon" style="background:rgba(168,85,247,0.1);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <p class="diff-number" style="color:#A855F7;">Cognitive Evolution</p>
+        <h3>Autonomous Reasoning</h3>
+        <p>Cal doesn't wait for retraining. It identifies gaps, develops new reasoning strategies, and self-corrects without human intervention. The system continuously evolves how it thinks — not just what it knows.</p>
+        <div class="diff-tags">
+          <span class="diff-tag" style="background:rgba(168,85,247,0.15);color:#C084FC;">Meta-Cognitive Loop</span>
+          <span class="diff-tag" style="background:rgba(168,85,247,0.15);color:#C084FC;">Autonomous Strategy Authoring</span>
+          <span class="diff-tag" style="background:rgba(168,85,247,0.15);color:#C084FC;">Knowledge Gap Detection</span>
+          <span class="diff-tag" style="background:rgba(168,85,247,0.15);color:#C084FC;">Reasoning Architecture Evolution</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── RESOURCES PREVIEW ── -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:20px;">
+      <div>
+        <p class="eyebrow">Resources</p>
+        <h2 class="headline-lg">Latest from <span class="text-blue">EfferentHQ</span></h2>
+      </div>
+      <a href="resources.html" class="btn btn-outline btn-sm">View All →</a>
+    </div>
+
+    <div class="resource-cards">
+      <div class="resource-card">
+        <div class="resource-card-img">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color:var(--blue);opacity:0.5;"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="resource-card-body">
+          <span class="resource-tag">Platform Brief</span>
+          <h4>Cal Platform Brief: Sovereign Intelligence for Enterprise and Consumer</h4>
+          <p class="body-sm">A comprehensive overview of Cal's architecture, capabilities, and product offerings.</p>
+          <p class="date">March 2026</p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-card-img" style="background:linear-gradient(135deg,rgba(52,211,153,0.08),var(--bg-card-hover));">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color:var(--green);opacity:0.5;"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="resource-card-body">
+          <span class="resource-tag blog">Blog</span>
+          <h4>Why Confidence Scoring Changes Everything About AI Trust</h4>
+          <p class="body-sm">How mathematically-derived confidence scores solve the hallucination problem.</p>
+          <p class="date">March 2026</p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-card-img" style="background:linear-gradient(135deg,rgba(245,158,11,0.08),var(--bg-card-hover));">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color:var(--gold);opacity:0.5;"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="resource-card-body">
+          <span class="resource-tag product">Product</span>
+          <h4>Introducing Cal Lattice: Discovery, Reflex, and ROI for Enterprise Data</h4>
+          <p class="body-sm">Three purpose-built engines that turn fragmented data into governed intelligence.</p>
+          <p class="date">March 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="headline-lg" style="margin-bottom:20px;">Let's Talk</h2>
+        <p class="body-lg" style="margin-bottom:40px;">Whether you're exploring Cal for personal or professional use, or evaluating Cal Lattice for your organization, we'd love to hear from you. Tell us what you're working on and we'll show you how Cal can help.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <div>
+            <p style="font-size:12px;color:var(--text-muted);margin-bottom:2px;">Email</p>
+            <a href="mailto:hello@efferenthq.com" style="font-size:15px;color:var(--text-primary);">hello@efferenthq.com</a>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;padding:24px;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);">
+          <p style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:8px;">Enterprise inquiries</p>
+          <p class="body-sm">For Cal Lattice deployments, custom pricing, or SLA discussions, mention "Enterprise" in your message and we'll route you to the right team within 24 hours.</p>
+        </div>
+      </div>
+
+      <div>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="first_name" required placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="last_name" required placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" name="email" required placeholder="jane@company.com">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label>I'm interested in...</label>
+            <select name="interest">
+              <option value="">Select one</option>
+              <option>Cal Consumer (Individual)</option>
+              <option>Cal Consumer (Team)</option>
+              <option>Cal Lattice / Enterprise</option>
+              <option>Cal API</option>
+              <option>Partnership</option>
+              <option>Press / Media</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us what you're working on..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Submit →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="nav-logo" style="font-size:20px;">
+        <svg viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="24" height="24" rx="6" stroke="#4D6BFE" stroke-width="2"/>
+          <path d="M8 9h12M8 14h8M8 19h10" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="22" cy="19" r="3" fill="#4D6BFE"/>
+        </svg>
+        Efferent<span class="hq">HQ</span>
+      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a>
+        <a href="#contact" class="btn btn-outline btn-sm">Schedule Demo</a>
+      </div>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="pricing.html">Cal Consumer</a></li>
+          <li><a href="#">Cal Lattice</a></li>
+          <li><a href="#">Discovery</a></li>
+          <li><a href="#">Reflex</a></li>
+          <li><a href="#">Cal API</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="resources.html">Blog</a></li>
+          <li><a href="resources.html">Platform Brief</a></li>
+          <li><a href="resources.html">Technical Docs</a></li>
+          <li><a href="resources.html">API Documentation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 EfferentHQ Inc. All rights reserved.</p>
+      <p>Sovereign Intelligence. Computable Confidence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="particles.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initParticles('hero-canvas', { count: 220, speed: 0.15, connectionDist: 90, maxOpacity: 0.6 });
+  });
+
+  function switchCalDemo(tab) {
+    document.getElementById('demo-research').style.display = tab === 'research' ? 'block' : 'none';
+    document.getElementById('demo-bi').style.display = tab === 'bi' ? 'block' : 'none';
+    document.getElementById('tab-research').style.background = tab === 'research' ? '#34D399' : 'rgba(14,15,26,0.8)';
+    document.getElementById('tab-research').style.color = tab === 'research' ? '#0E0F1A' : '#64748B';
+    document.getElementById('tab-bi').style.background = tab === 'bi' ? '#34D399' : 'rgba(14,15,26,0.8)';
+    document.getElementById('tab-bi').style.color = tab === 'bi' ? '#0E0F1A' : '#64748B';
+  }
+</script>
+</body>
+</html>
