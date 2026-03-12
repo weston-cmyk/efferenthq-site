@@ -713,6 +713,23 @@ img { max-width: 100%; display: block; }
 }
 .diff-item h3 { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 12px; }
 .diff-item > p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 18px; }
+.tech-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.tech-details.expanded {
+  max-height: 120px;
+}
+.tech-toggle {
+  background: none; border: none; cursor: pointer;
+  font-size: 12px; font-weight: 600;
+  color: var(--text-muted);
+  padding: 0; margin-top: 12px;
+  transition: color 0.2s;
+  letter-spacing: 0.3px;
+}
+.tech-toggle:hover { color: var(--blue-light); }
 .diff-tags {
   display: flex; flex-wrap: wrap; gap: 8px;
   padding-top: 16px;
