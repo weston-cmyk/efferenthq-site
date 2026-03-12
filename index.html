@@ -215,13 +215,13 @@
             <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin:0;">Cal — Live Response</p>
           </div>
           <div style="display:flex;gap:0;border-radius:10px;overflow:hidden;border:1px solid rgba(77,107,254,0.3);" id="calDemoTabs">
-            <button onclick="switchCalDemo('research')" id="tab-research" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:var(--green);color:#0E0F1A;letter-spacing:0.3px;">Research</button>
-            <button onclick="switchCalDemo('bi')" id="tab-bi" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:rgba(14,15,26,0.8);color:var(--text-muted);letter-spacing:0.3px;">Business Intelligence</button>
+            <button onclick="switchCalDemo('bi')" id="tab-bi" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:var(--green);color:#0E0F1A;letter-spacing:0.3px;">Business Intelligence</button>
+            <button onclick="switchCalDemo('research')" id="tab-research" style="font-size:13px;font-weight:700;padding:10px 22px;border:none;cursor:pointer;transition:0.25s;background:rgba(14,15,26,0.8);color:var(--text-muted);letter-spacing:0.3px;">Research</button>
           </div>
         </div>
 
         <!-- ══ RESEARCH EXAMPLE ══ -->
-        <div id="demo-research">
+        <div id="demo-research" style="display:none;">
           <div style="background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.18);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
             <p style="font-size:10px;color:var(--blue-light);margin-bottom:6px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Query</p>
             <p style="font-size:14px;color:var(--text-secondary);font-style:italic;line-height:1.5;">"Is there a link between gut microbiome composition and treatment response in late-stage melanoma patients?"</p>
@@ -250,7 +250,7 @@
         </div>
 
         <!-- ══ BUSINESS INTELLIGENCE EXAMPLE ══ -->
-        <div id="demo-bi" style="display:none;">
+        <div id="demo-bi">
           <div style="background:rgba(77,107,254,0.06);border:1px solid rgba(77,107,254,0.18);border-radius:12px;padding:16px 18px;margin-bottom:14px;">
             <p style="font-size:10px;color:var(--blue-light);margin-bottom:6px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Query</p>
             <p style="font-size:14px;color:var(--text-secondary);font-style:italic;line-height:1.5;">"What's our projected Q3 revenue if enterprise churn stays at current rate and the mid-market pipeline converts at historical averages?"</p>
