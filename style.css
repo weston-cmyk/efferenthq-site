@@ -998,6 +998,38 @@ img { max-width: 100%; display: block; }
 .mission-block p { font-size: 18px; color: var(--text-secondary); line-height: 1.75; }
 
 /* Use Cases */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.comparison-col {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+}
+.comparison-old { opacity: 0.7; }
+.comparison-cal { border-color: rgba(52,211,153,0.25); }
+.comparison-row {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.comparison-row:last-child { border-bottom: none; }
+.comparison-label {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.comparison-row p:last-child {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.5;
+}
+.comparison-cal .comparison-row p:last-child { color: var(--white); }
+@media (max-width: 768px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+
 .use-case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .use-case-card {
   background: var(--bg-card);
