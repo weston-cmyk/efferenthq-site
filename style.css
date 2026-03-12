@@ -481,6 +481,38 @@ img { max-width: 100%; display: block; }
 .feature-strip-item p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
 
 /* ============================
+   METRICS BAR
+   ============================ */
+.metrics-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 40px 32px;
+  text-align: center;
+}
+.metric-number {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.metric-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .metrics-bar { grid-template-columns: repeat(2, 1fr); gap: 32px 16px; }
+}
+@media (max-width: 480px) {
+  .metrics-bar { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* ============================
    PIPELINE DIAGRAM
    ============================ */
 .pipeline {
