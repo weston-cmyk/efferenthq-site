@@ -27,28 +27,29 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li class="nav-dropdown">
-        <a href="#">Products
+        <a href="products/index.html">Products
           <svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
         </a>
         <div class="dropdown-menu">
           <div class="dropdown-section">
             <div class="dropdown-section-label">Cal — Sovereign Intelligence</div>
-            <a href="pricing.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers for researchers &amp; professionals</span></a>
-            <a href="#" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment for privacy-critical teams</span></a>
-            <a href="#" class="dropdown-item"><strong>Specialist Domains</strong><span>Deep knowledge layers for regulated industries</span></a>
-            <a href="#" class="dropdown-item"><strong>Cal API</strong><span>Developer platform — embed Cal in your product</span></a>
+            <a href="products/cal-consumer.html" class="dropdown-item"><strong>Cal Consumer</strong><span>Verified answers for researchers &amp; professionals</span></a>
+            <a href="products/cal-sovereign.html" class="dropdown-item"><strong>Cal Sovereign</strong><span>Air-gapped deployment for privacy-critical teams</span></a>
+            <a href="products/specialists.html" class="dropdown-item"><strong>Specialist Domains</strong><span>Deep knowledge layers for regulated industries</span></a>
+            <a href="products/cal-api.html" class="dropdown-item"><strong>Cal API</strong><span>Developer platform — embed Cal in your product</span></a>
           </div>
           <div class="dropdown-divider"></div>
           <div class="dropdown-section">
             <div class="dropdown-section-label">Cal Lattice Platform</div>
-            <a href="#" class="dropdown-item"><strong>Discovery</strong><span>See your entire data estate as a single navigable map</span></a>
-            <a href="#" class="dropdown-item"><strong>Reflex</strong><span>Real-time business intelligence and signal detection</span></a>
-            <a href="#" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + Cal Intelligence</span></a>
+            <a href="products/discovery.html" class="dropdown-item"><strong>Discovery</strong><span>See your entire data estate as a single navigable map</span></a>
+            <a href="products/reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time business intelligence and signal detection</span></a>
+            <a href="products/roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Outcome tracking & decision attribution</span></a>
+            <a href="products/cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + ROI Engine</span></a>
           </div>
         </div>
       </li>
       <li><a href="pricing.html" class="active">Pricing</a></li>
-      <li><a href="resources.html">Resources</a></li>
+      <li><a href="resources.html">Resources</a></li><li><a href="security.html">Security</a></li>
     </ul>
     <div class="nav-actions">
       <a href="pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
@@ -96,7 +97,7 @@
             <li>Overall confidence score</li>
             <li>3-day conversation history</li>
           </ul>
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;padding-top:12px;border-top:1px solid var(--border-subtle);">Upgrade trigger: 20/day query limit</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;padding-top:12px;border-top:1px solid var(--border-subtle);">Start with 20 queries per day. Upgrade anytime for unlimited access.</p>
           <a href="#" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started Free</a>
         </div>
 
@@ -120,8 +121,8 @@
             <li>Research export (3/mo)</li>
             <li>30-day conversation history</li>
           </ul>
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;padding-top:12px;border-top:1px solid var(--border-subtle);"><strong style="color:var(--white);">Specialist Add-ons:</strong> $15/mo each</p>
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;">Upgrade trigger: API access, or unlimited history</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;padding-top:12px;border-top:1px solid var(--border-subtle);"><strong style="color:var(--white);">Specialist Add-ons:</strong> from $15/mo each</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;">Need API access or unlimited history? Upgrade to Sovereign.</p>
           <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;">Start Pro Trial</a>
         </div>
 
@@ -158,32 +159,20 @@
     <!-- ENTERPRISE PANEL -->
     <div class="pricing-panel" id="panel-enterprise">
       <div class="enterprise-pricing">
-        <div>
-          <p class="eyebrow" style="color:var(--green);">Cal Lattice Platform</p>
-          <h3 class="headline-md" style="margin-bottom:16px;">Custom Pricing Built Around Your Data Estate.</h3>
-          <p class="body-md" style="margin-bottom:20px;">Every enterprise deployment is different. Your pricing depends on data environment size, engines needed, and deployment model. We'll build a proposal tailored to your organization.</p>
-          <p class="body-sm" style="margin-bottom:28px;">All Lattice deployments include: zero data egress, governed access controls, dedicated support, and SLA guarantees.</p>
-          <a href="index.html#contact" class="btn btn-green">Schedule Enterprise Demo →</a>
-        </div>
-        <div class="enterprise-mini-cards">
-          <div class="mini-card">
-            <h5>Discovery</h5>
-            <p>Data estate mapping &amp; knowledge rationalization</p>
-          </div>
-          <div class="mini-card">
-            <h5>Reflex</h5>
-            <p>Real-time signal detection &amp; governed alerts</p>
-          </div>
-          <div class="mini-card">
-            <h5>ROI Engine</h5>
-            <p>Outcome tracking &amp; decision attribution</p>
-          </div>
-          <div class="mini-card">
-            <h5>Cal Enterprise</h5>
-            <p>Full platform — all three engines together</p>
-          </div>
+      <div style="text-align: center; padding: 40px 20px; width:100%;">
+        <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 16px;">Start with Discovery. Scale to Full Intelligence.</h3>
+        <p style="color: #ccd6f6; font-size: 1.05rem; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+          Most teams begin with a single-engine deployment — typically Discovery or Reflex — to prove value against their own data estate. From there, expand to the full Cal Lattice platform with ROI tracking built in.
+        </p>
+        <p style="color: #8892b0; font-size: 0.95rem; margin-top: 16px;">
+          Deployments are scoped to your data complexity, compliance requirements, and integration depth.
+        </p>
+        <div style="margin-top: 32px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="mailto:info@efferenthq.com?subject=Cal%20Lattice%20Inquiry" class="btn btn-green">Talk to Founder →</a>
+          <a href="resources.html#platform-brief" class="btn btn-outline">Download Platform Brief</a>
         </div>
       </div>
+    </div>
     </div>
 
     <!-- ── FAQ ── -->
@@ -262,35 +251,20 @@
       </div>
     </div>
     <div class="footer-columns">
-      <div class="footer-col"><h5>Products</h5><ul>
-        <li><a href="pricing.html">Cal Consumer</a></li>
-        <li><a href="#">Cal Lattice</a></li>
-        <li><a href="#">Discovery</a></li>
-        <li><a href="#">Reflex</a></li>
-        <li><a href="#">Cal API</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-      </ul></div>
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="products/cal-consumer.html">Cal Consumer</a></li><li><a href="products/cal-sovereign.html">Cal Sovereign</a></li><li><a href="products/specialists.html">Specialist Domains</a></li><li><a href="products/cal-api.html">Cal API</a></li><li><a href="products/discovery.html">Discovery</a></li><li><a href="products/reflex.html">Reflex</a></li><li><a href="products/roi-engine.html">ROI Engine</a></li><li><a href="products/cal-enterprise.html">Cal Enterprise</a></li></ul></div>
       <div class="footer-col"><h5>Resources</h5><ul>
         <li><a href="resources.html">Blog</a></li>
         <li><a href="resources.html">Platform Brief</a></li>
         <li><a href="resources.html">Technical Docs</a></li>
         <li><a href="resources.html">API Documentation</a></li>
       </ul></div>
-      <div class="footer-col"><h5>Company</h5><ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="#">Press</a></li>
-      </ul></div>
-      <div class="footer-col"><h5>Legal</h5><ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="security.html">Security &amp; Compliance</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 EfferentHQ Inc. All rights reserved.</p>
       <p>Sovereign Intelligence. Computable Confidence.</p>
-    </div>
+    <p><a href="mailto:info@efferenthq.com" style="color:var(--text-secondary);text-decoration:none;">info@efferenthq.com</a></p></div>
   </div>
 </footer>
 
@@ -298,6 +272,26 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     initParticles('pricing-canvas', { count: 50, speed: 0.15, connectionDist: 100, maxOpacity: 0.35 });
+  });
+</script>
+
+<!-- Basic CTA tracking — replace GA_MEASUREMENT_ID with your GA4 ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="demo"], a[href*="trial"], a[href*="free"], button').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_category': 'engagement',
+          'event_label': (el.textContent || '').trim().substring(0, 50),
+          'page_location': window.location.pathname
+        });
+      });
+    });
   });
 </script>
 </body>

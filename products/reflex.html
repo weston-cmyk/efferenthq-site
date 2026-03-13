@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reflex — EfferentHQ</title>
-  <meta name="description" content="Reflex watches your data continuously and fires confidence-scored, governed alerts the moment something important changes. Real-time intelligence for your entire organization.">
+  <meta name="description" content="Reflex is Cal's governed real-time signal engine, combining deterministic event logic with confidence-scored prioritization to route only high-value alerts.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
@@ -50,15 +50,15 @@
           </div>
           <div class="dropdown-divider"></div>
           <div class="dropdown-section"><div class="dropdown-section-label">Cal Lattice Platform</div>
-            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>Map your entire data estate automatically</span></a>
-            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time signal detection and governed alerts</span></a>
-            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Decision attribution and outcome tracking</span></a>
-            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + Cal Intelligence</span></a>
+            <a href="discovery.html" class="dropdown-item"><strong>Discovery</strong><span>See your entire data estate as a single navigable map</span></a>
+            <a href="reflex.html" class="dropdown-item"><strong>Reflex</strong><span>Real-time business intelligence and signal detection</span></a>
+            <a href="roi-engine.html" class="dropdown-item"><strong>ROI Engine</strong><span>Outcome tracking & decision attribution</span></a>
+            <a href="cal-enterprise.html" class="dropdown-item"><strong>Cal Enterprise</strong><span>Full stack: Discovery + Reflex + ROI Engine</span></a>
           </div>
         </div>
       </li>
       <li><a href="../pricing.html">Pricing</a></li>
-      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../resources.html">Resources</a></li><li><a href="../security.html">Security</a></li>
     </ul>
     <div class="nav-actions">
       <a href="../pricing.html" class="btn btn-outline btn-sm">Try Cal Free</a>
@@ -75,8 +75,8 @@
       <span style="width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;"></span>
       <span style="font-size:11px;font-weight:700;color:var(--green);letter-spacing:1.5px;text-transform:uppercase;">Cal Lattice — Reflex Engine</span>
     </div>
-    <h1 class="headline-xl" style="margin-bottom:20px;">Real-Time Intelligence.<br><span class="text-green">Confidence-Scored.</span></h1>
-    <p class="body-lg" style="max-width:680px;margin-bottom:40px;">Reflex watches your data continuously and fires governed alerts the moment something important changes — every signal backed by a mathematically-derived confidence score. No noise. No missed signals. No guessing.</p>
+    <h1 class="headline-xl" style="margin-bottom:20px;">Real-Time Signal Governance.<br><span class="text-green">Actionable by Design.</span></h1>
+    <p class="body-lg" style="max-width:680px;margin-bottom:40px;">Reflex continuously evaluates live data surfaces and routes only confidence-qualified signals to downstream teams and systems. It is built to minimize alert noise while preserving fast detection of material business shifts.</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;">
       <a href="../index.html#contact" class="btn btn-green btn-lg">Schedule Reflex Demo →</a>
       <a href="discovery.html" class="btn btn-outline btn-lg">See Discovery First</a>
@@ -90,9 +90,9 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
       <div>
         <p class="eyebrow" style="color:var(--green);">Live Intelligence</p>
-        <h2 class="headline-lg" style="margin-bottom:20px;">Every Signal. Confidence-Scored. Instantly Routed.</h2>
-        <p class="body-md" style="margin-bottom:20px;">Reflex doesn't just alert you that something happened — it tells you how confident it is that it matters. Every alert carries a mathematically-derived score. High confidence means act now. Low confidence means be aware.</p>
-        <p class="body-md">And because Reflex is governed, every alert follows your defined routing rules — no rogue notifications, no alert fatigue, no signal lost in the wrong inbox.</p>
+        <h2 class="headline-lg" style="margin-bottom:20px;">Every Signal Carries Priority, Context, and Confidence.</h2>
+        <p class="body-md" style="margin-bottom:20px;">Reflex evaluates significance before routing, not after. Each event is packaged with confidence, source context, and signal classification so teams can act immediately without secondary triage.</p>
+        <p class="body-md">Governed routing policies enforce who gets what, when, and through which channel. The result is operational precision: high-urgency signals escalate fast, lower-confidence events remain visible without generating chaos.</p>
       </div>
       <div class="alert-preview">
         <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Reflex Alert Feed</p>
@@ -100,7 +100,7 @@
           <div class="alert-dot" style="background:var(--green);"></div>
           <div style="flex:1;">
             <h5>Revenue velocity up 34% — Q2 run rate exceeds target</h5>
-            <p>accounts.arr + deals.close_date — triggered 2 min ago</p>
+            <p>accounts.arr + deals.close_date | classified as expansion signal 2 min ago</p>
           </div>
           <span class="alert-score" style="background:rgba(52,211,153,0.12);color:var(--green);">94%</span>
         </div>
@@ -108,7 +108,7 @@
           <div class="alert-dot" style="background:var(--gold);"></div>
           <div style="flex:1;">
             <h5>Churn risk cluster detected — 6 enterprise accounts</h5>
-            <p>customer_health.score + support.tickets — triggered 8 min ago</p>
+            <p>customer_health.score + support.tickets | classified as retention risk 8 min ago</p>
           </div>
           <span class="alert-score" style="background:rgba(245,158,11,0.12);color:var(--gold);">78%</span>
         </div>
@@ -116,7 +116,7 @@
           <div class="alert-dot" style="background:var(--blue);"></div>
           <div style="flex:1;">
             <h5>New data pattern in product_events — potential feature adoption signal</h5>
-            <p>product.events + cohorts.segment — triggered 22 min ago</p>
+            <p>product.events + cohorts.segment | classified as emerging behavior 22 min ago</p>
           </div>
           <span class="alert-score" style="background:rgba(77,107,254,0.12);color:var(--blue-light);">61%</span>
         </div>
@@ -136,23 +136,23 @@
       <div class="hiw-flow">
         <div class="hiw-node" style="border-right:1px solid var(--border-subtle);">
           <div style="width:44px;height:44px;background:rgba(77,107,254,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
-          <h4>Monitor</h4>
-          <p>Reflex watches every entity in your Discovery knowledge map — continuously, in real time.</p>
+          <h4>Observe</h4>
+          <p>Reflex watches entities and dependencies from the Discovery map with continuous, governed telemetry windows.</p>
         </div>
         <div class="hiw-node" style="border-right:1px solid var(--border-subtle);">
           <div style="width:44px;height:44px;background:rgba(52,211,153,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
           <h4>Detect</h4>
-          <p>When a signal appears — a spike, a pattern, an anomaly — Reflex scores its significance using Cal's intelligence engine.</p>
+          <p>When shifts appear (anomalies, velocity breaks, pattern emergence), Reflex classifies event type and business relevance.</p>
         </div>
         <div class="hiw-node" style="border-right:1px solid var(--border-subtle);">
           <div style="width:44px;height:44px;background:rgba(245,158,11,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
           <h4>Score</h4>
-          <p>Every signal gets a mathematically-derived confidence score. High-confidence signals get immediate routing. Lower-confidence signals get appropriate visibility.</p>
+          <p>Signals are confidence-ranked using multi-surface evidence so urgent events escalate while ambiguous events are staged appropriately.</p>
         </div>
         <div class="hiw-node">
           <div style="width:44px;height:44px;background:rgba(168,85,247,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.79 19.79 19.79 0 01.34 1.18 2 2 0 012.32 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.14 6.14l.77-.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
           <h4>Route</h4>
-          <p>Alert goes to Slack, your CRM, email, webhook, or any configured channel — with the confidence score, data context, and suggested action attached.</p>
+          <p>Policy-driven delivery sends alerts to Slack, CRM, email, webhooks, and ops tools with confidence, context, and recommended action framing.</p>
         </div>
       </div>
     </div>
@@ -168,32 +168,32 @@
       <div class="signal-card">
         <div class="signal-icon" style="background:rgba(52,211,153,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg></div>
         <h4>Metric Anomalies</h4>
-        <p>Unusual spikes or drops in any tracked metric — revenue, churn, engagement, infrastructure cost — detected automatically with confidence scoring.</p>
+        <p>Detects statistically meaningful deviations in revenue, churn, engagement, cost, and operational KPIs with calibrated confidence output.</p>
       </div>
       <div class="signal-card">
         <div class="signal-icon" style="background:rgba(77,107,254,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
         <h4>Velocity Changes</h4>
-        <p>Rate-of-change signals — deals accelerating, support tickets compounding, usage growing — caught before they become visible in weekly reports.</p>
+        <p>Tracks second-order momentum shifts so acceleration or deceleration surfaces ahead of dashboard lag and weekly reporting cycles.</p>
       </div>
       <div class="signal-card">
         <div class="signal-icon" style="background:rgba(245,158,11,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div>
         <h4>Risk Patterns</h4>
-        <p>Clusters of behavior that historically precede churn, compliance risk, fraud, or operational failure — detected before they become problems.</p>
+        <p>Identifies multi-factor clusters associated with churn, compliance exposure, fraud, or operational failure before threshold breach events.</p>
       </div>
       <div class="signal-card">
         <div class="signal-icon" style="background:rgba(168,85,247,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h4>Data Quality Events</h4>
-        <p>Schema drift, null rate increases, referential integrity failures, or unexpected data distributions — caught before they corrupt downstream analytics.</p>
+        <p>Catches schema drift, null inflation, referential integrity breaks, and distribution shifts before they contaminate downstream intelligence.</p>
       </div>
       <div class="signal-card">
         <div class="signal-icon" style="background:rgba(52,211,153,0.1);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
         <h4>Segment Shifts</h4>
-        <p>Changes in customer behavior by cohort, geography, or product tier — surfaced before they aggregate enough to appear in standard dashboards.</p>
+        <p>Surfaces cohort, region, and tier behavior inflections before aggregates hide local regime changes with delayed visibility.</p>
       </div>
       <div class="signal-card">
         <div class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
         <h4>Custom Signals</h4>
-        <p>Define your own signal rules using plain language or structured logic. Reflex watches for exactly what your business considers important.</p>
+        <p>Supports domain-defined rules and policy logic so teams can encode mission-critical detections beyond default event templates.</p>
       </div>
     </div>
   </div>
@@ -243,12 +243,12 @@
       <div style="display:flex;gap:12px;flex-wrap:wrap;"><a href="../pricing.html" class="btn btn-primary btn-sm">Try Cal Free</a><a href="../index.html#contact" class="btn btn-outline btn-sm">Schedule Demo</a></div>
     </div>
     <div class="footer-columns">
-      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="reflex.html">Reflex</a></li><li><a href="roi-engine.html">ROI Engine</a></li><li><a href="cal-enterprise.html">Cal Enterprise</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="cal-consumer.html">Cal Consumer</a></li><li><a href="cal-sovereign.html">Cal Sovereign</a></li><li><a href="specialists.html">Specialist Domains</a></li><li><a href="cal-api.html">Cal API</a></li><li><a href="discovery.html">Discovery</a></li><li><a href="reflex.html">Reflex</a></li><li><a href="roi-engine.html">ROI Engine</a></li><li><a href="cal-enterprise.html">Cal Enterprise</a></li></ul></div>
       <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Blog</a></li><li><a href="../resources.html">Platform Brief</a></li><li><a href="../resources.html">Technical Docs</a></li><li><a href="../resources.html">API Documentation</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="../index.html#contact">Contact</a></li><li><a href="#">Press</a></li></ul></div>
-      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../about.html">About</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="../security.html">Security &amp; Compliance</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p></div>
+    <div class="footer-bottom"><p>© 2026 EfferentHQ Inc. All rights reserved.</p><p>Sovereign Intelligence. Computable Confidence.</p><p><a href="mailto:info@efferenthq.com" style="color:var(--text-secondary);text-decoration:none;">info@efferenthq.com</a></p></div>
   </div>
 </footer>
 
@@ -256,6 +256,26 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     initParticles('reflex-canvas', { count: 80, speed: 0.3, connectionDist: 120, maxOpacity: 0.45, color: '52,211,153' });
+  });
+</script>
+
+<!-- Basic CTA tracking — replace GA_MEASUREMENT_ID with your GA4 ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="demo"], a[href*="trial"], a[href*="free"], button').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_category': 'engagement',
+          'event_label': (el.textContent || '').trim().substring(0, 50),
+          'page_location': window.location.pathname
+        });
+      });
+    });
   });
 </script>
 </body>
