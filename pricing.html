@@ -80,7 +80,7 @@
 
     <!-- CONSUMER PANEL -->
     <div class="pricing-panel active" id="panel-consumer">
-      <div class="pricing-grid">
+      <div class="pricing-grid" style="grid-template-columns:repeat(3,1fr);">
 
         <!-- FREE -->
         <div class="pricing-card">
@@ -91,12 +91,12 @@
           </div>
           <p class="tier-desc">Get started with Cal — no credit card required.</p>
           <ul class="features-list">
-            <li>Verified answers with confidence scores</li>
-            <li>Basic evidence trails</li>
-            <li>Standard response times</li>
-            <li>50 queries / day</li>
-            <li>Community support</li>
+            <li>200M+ node knowledge mesh</li>
+            <li>20 queries / day</li>
+            <li>Overall confidence score</li>
+            <li>3-day conversation history</li>
           </ul>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;padding-top:12px;border-top:1px solid var(--border-subtle);">Upgrade trigger: 20/day query limit</p>
           <a href="#" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started Free</a>
         </div>
 
@@ -108,35 +108,21 @@
             <span class="amount">$35</span>
             <span class="period"> /month</span>
           </div>
+          <p style="font-size:12px;color:var(--text-muted);margin-bottom:16px;">$29/mo billed annually</p>
           <p class="tier-desc">For professionals who need reliable intelligence daily.</p>
           <ul class="features-list">
-            <li>Everything in Free</li>
             <li>Unlimited queries</li>
-            <li>Full reasoning chains</li>
-            <li>Priority response times</li>
-            <li>Extended session history</li>
-            <li>Email support</li>
+            <li>Full 7D confidence tensor</li>
+            <li>Evidence trails</li>
+            <li>Reasoning summary (3 causal steps)</li>
+            <li>Multi-Mind deliberation</li>
+            <li>Dream Cycle insights</li>
+            <li>Research export (3/mo)</li>
+            <li>30-day conversation history</li>
           </ul>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;padding-top:12px;border-top:1px solid var(--border-subtle);"><strong style="color:var(--white);">Specialist Add-ons:</strong> $15/mo each</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:20px;">Upgrade trigger: API access, or unlimited history</p>
           <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;">Start Pro Trial</a>
-        </div>
-
-        <!-- EXPERT -->
-        <div class="pricing-card">
-          <div class="tier-name">Expert</div>
-          <div class="tier-price">
-            <span class="amount">$50</span>
-            <span class="period"> /month</span>
-          </div>
-          <p class="tier-desc">Deep, auditable intelligence for researchers and analysts.</p>
-          <ul class="features-list">
-            <li>Everything in Pro</li>
-            <li>Advanced confidence breakdowns</li>
-            <li>Full provenance trails</li>
-            <li>Specialist domain access</li>
-            <li>Citation export</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="#" class="btn btn-outline" style="width:100%;justify-content:center;">Start Expert Trial</a>
         </div>
 
         <!-- SOVEREIGN -->
@@ -144,29 +130,28 @@
           <div class="sovereign-badge">Sovereign</div>
           <div class="tier-name" style="color:var(--gold);">Sovereign</div>
           <div class="tier-price">
-            <span class="amount" style="color:var(--gold);">$100</span>
+            <span class="amount" style="color:var(--gold);">$129</span>
             <span class="period"> /month</span>
           </div>
+          <p style="font-size:12px;color:var(--text-muted);margin-bottom:16px;">$99/mo billed annually</p>
           <p class="tier-desc">Maximum intelligence with full data sovereignty.</p>
           <p style="font-style:italic;font-size:13px;color:var(--text-muted);margin-bottom:20px;line-height:1.5;">For teams and individuals where data can never leave your infrastructure.</p>
           <ul class="features-list">
-            <li>Everything in Expert</li>
-            <li>Zero data egress guarantee</li>
-            <li>Dedicated inference resources</li>
-            <li>Custom domain configuration</li>
-            <li>White-glove onboarding</li>
-            <li>Direct engineering support</li>
+            <li>Everything in Pro</li>
+            <li>Full 7D confidence + calibration curve</li>
+            <li>Evidence trails + export</li>
+            <li>Full step-by-step reasoning replay</li>
+            <li>Export reasoning as PDF</li>
+            <li>All Specialist Domains included</li>
+            <li>Unlimited research export</li>
+            <li>Unlimited conversation history</li>
+            <li>Priority processing</li>
+            <li>API access (3K calls/mo included)</li>
+            <li>Early access to new features</li>
           </ul>
           <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--gold);border-color:var(--gold);color:#0E0F1A;">Start Sovereign Trial</a>
         </div>
 
-      </div>
-
-      <!-- Specialist add-ons note -->
-      <div style="text-align:center;margin-top:40px;padding:20px;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);max-width:700px;margin-left:auto;margin-right:auto;">
-        <p style="font-size:14px;color:var(--text-secondary);">
-          <strong style="color:var(--white);">Specialist Add-ons:</strong> Deep domain knowledge in Medicine, Law, Finance, and Climate. Available at Expert tier and above — $15–25/mo per domain.
-        </p>
       </div>
     </div>
 
@@ -232,10 +217,10 @@
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            What's included in Specialist domain access?
+            What are Specialist Domains?
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Specialists are domain-specific knowledge add-ons that give Cal deep expertise in Medicine, Law, Finance, and Climate. They're available at Expert tier and above, priced at $15–25/mo per domain depending on specialization depth.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Specialist Domains are deep knowledge layers for regulated industries — Medicine, Law, Finance, and Climate. On the Pro tier, they're available as add-ons at $15/mo each. On Sovereign, all current and future Specialist Domains are included at no extra cost.</div></div>
         </div>
 
         <div class="faq-item">
@@ -251,7 +236,7 @@
             Is there a free trial for paid tiers?
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m-7-7h14"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes. Pro and Expert tiers include a 14-day free trial with no credit card required. Sovereign tier trials are available on request — reach out to hello@efferenthq.com.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Pro includes a 14-day free trial with no credit card required. Sovereign trials are available on request — reach out to hello@efferenthq.com.</div></div>
         </div>
       </div>
     </div>
